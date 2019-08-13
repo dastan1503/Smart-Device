@@ -1,0 +1,37 @@
+.form {
+  background-color: #00b2ff;
+  width: 100%;
+  color: #ffffff;
+  min-height: 670px;
+  background-image: url("../img/airplane-desktop.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 370px) 180px;
+}
+
+.form h2 {
+  margin-top: 96px;
+  margin-bottom: 0;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+  position: relative;
+  left: 50%;
+}
+
+.form p {
+  position: relative;
+  left: 50%;
+  font-size: 16px;
+  line-height: 22px;
+  width: 570px;
+  font-family: "PT Mono", "Courier New", monospace;
+}
+
+.form form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 570px;
+  position: relative;
+  left: 50%;
+}
