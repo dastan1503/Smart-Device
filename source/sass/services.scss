@@ -1,0 +1,49 @@
+.services {
+  width: 1170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 109px;
+}
+
+.services div {
+  width: 566px;
+  border: 1px solid #ebebeb;
+  border-left: 3px solid #00b2ff;
+  margin-bottom: 30px;
+  min-height: 297px;
+}
+
+.services h3 {
+  color: #00b2ff;
+  font-size: 24px;
+  margin-left: 45px;
+}
+
+.services svg {
+  margin-top: 40px;
+  margin-left: 45px;
+}
+
+.services p {
+  font-family: "PT Mono", "Courier New", monospace;
+  margin-left: 45px;
+  width: 483px;
+  font-size: 16px;
+}
+
+.services div:hover {
+  cursor: pointer;
+  background: #00b2ff;
+  color: #ffffff;
+}
+
+.services div:hover svg path {
+  fill: #ffffff;
+}
+
+.services div:hover h3 {
+  color: #ffffff;
+}
