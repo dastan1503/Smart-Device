@@ -25,13 +25,95 @@
   line-height: 22px;
   width: 570px;
   font-family: "PT Mono", "Courier New", monospace;
+  margin-bottom: 49px;
 }
 
 .form form {
   display: flex;
   flex-direction: row;
+  align-items: center;
   flex-wrap: wrap;
   width: 570px;
   position: relative;
   left: 50%;
+}
+
+.form input,
+.form textarea {
+  box-sizing: border-box;
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: none;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.form input {
+  width: 270px;
+  min-height: 50px;
+}
+
+.form input:first-child {
+  margin-right: 30px;
+}
+
+.form textarea {
+  width: 570px;
+  min-height: 154px;
+  margin-top: 40px;
+  margin-bottom: 43px;
+  resize: none;
+}
+
+.form button {
+  color: #ffffff;
+  width: 270px;
+  border-radius: 5px;
+  height: 45px;
+  border: 1px solid #ffffff;
+  background-color: #00b2ff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 38px;
+}
+
+.form input[type="checkbox"] {
+  display: none;
+}
+
+.form label {
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  width: 262px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.form label:hover {
+  opacity: 1;
+}
+
+.form label::before {
+  content: "";
+  display: block;
+  min-width: 16px;
+  height: 16px;
+  border: 1px solid #ffffff;
+  margin-right: 16px;
+}
+
+.form input[type="checkbox"]:checked + label::before {
+  background-image: url("../img/checkbox-on.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
 }
