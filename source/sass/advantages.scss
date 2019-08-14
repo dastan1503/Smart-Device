@@ -1,0 +1,49 @@
+.advantages {
+  width: 1170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 109px;
+}
+
+.advantages div {
+  width: 566px;
+  border: 1px solid #ebebeb;
+  border-left: 3px solid #00b2ff;
+  margin-bottom: 30px;
+  min-height: 297px;
+}
+
+.advantages h3 {
+  color: #00b2ff;
+  font-size: 24px;
+  margin-left: 45px;
+}
+
+.advantages svg {
+  margin-top: 40px;
+  margin-left: 45px;
+}
+
+.advantages p {
+  font-family: "PT Mono", "Courier New", monospace;
+  margin-left: 45px;
+  width: 483px;
+  font-size: 16px;
+}
+
+.advantages div:hover {
+  cursor: pointer;
+  background: #00b2ff;
+  color: #ffffff;
+}
+
+.advantages div:hover svg path {
+  fill: #ffffff;
+}
+
+.advantages div:hover h3 {
+  color: #ffffff;
+}

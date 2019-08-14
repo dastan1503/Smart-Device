@@ -1,0 +1,121 @@
+.modal {
+  box-sizing: border-box;
+  width: 490px;
+  min-height: 605px;
+  position: fixed;
+  top: 172px;
+  left: calc(50% - 245px);
+  background-color: #00b2ff;
+  padding: 33px 40px 36px 40px;
+}
+
+.modal h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.modal p {
+  font-family: "PT Mono", "Courier New", monospace;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
+  width: 385px;
+}
+
+.modal__form input,
+.modal__form textarea {
+  color: #ffffff;
+  width: 385px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding-left: 25px;
+  border: none;
+  resize: none;
+}
+
+.modal__form input:focus,
+.modal__form textarea:focus,
+.modal__form input:hover,
+.modal__form textarea:hover {
+  opacity: 0.8;
+}
+
+.modal__form input::placeholder,
+.modal__form textarea::placeholder {
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: 16px;
+  opacity: 1;
+}
+
+.modal__form input {
+  height: 52px;
+  margin-bottom: 31px;
+}
+
+.modal__form textarea {
+  height: 91px;
+  padding-top: 13px;
+  margin: 0;
+}
+
+.modal__form button[type="submit"] {
+  margin-top: 30px;
+  margin-bottom: 34px;
+  height: 47px;
+  width: 410px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  background-color: #00b2ff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.modal__form input[type="checkbox"] {
+  display: none;
+}
+
+.modal__form label {
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  width: 262px;
+  color: #ffffff;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.modal__form label:hover {
+  opacity: 1;
+}
+
+.modal__form label::before {
+  content: "";
+  display: block;
+  min-width: 16px;
+  height: 16px;
+  border: 1px solid #ffffff;
+  margin-right: 33px;
+}
+
+.modal__form input[type="checkbox"]:checked + label::before {
+  background-image: url("../img/checkbox-on.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.modal__close {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 20px;
+  right: 28px;
+  background-color: #00b2ff;
+  border: 0;
+  background-image: url("../img/close.svg");
+  cursor: pointer;
+}

@@ -1,0 +1,44 @@
+.about-info {
+  width: 1170px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-bottom: 110px;
+}
+
+.about-info img {
+  position: absolute;
+  left: -20px;
+}
+
+.about-info div {
+  display: flex;
+  flex-direction: column;
+  width: 985px;
+  margin-left: 180px;
+}
+
+.about-info h2 {
+  color: #666666;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+}
+
+.about-info p {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "PT Mono", "Courier New", monospace;
+}
+
+.about-info button {
+  background-color: #ffffff;
+  border: 1px solid #00b2ff;
+  border-radius: 5px;
+  width: 178px;
+  height: 43px;
+  color: #00b2ff;
+  text-transform: uppercase;
+}

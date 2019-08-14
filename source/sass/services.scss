@@ -1,0 +1,81 @@
+.services {
+  background-color: #1b2d37;
+  color: #ffffff;
+  width: 100%;
+  min-height: 938px;
+}
+
+.services h3 {
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 93px;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  margin-bottom: 47px;
+}
+
+.services ul {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 127px;
+}
+
+.services li {
+  position: relative;
+  min-height: 620px;
+  width: 370px;
+}
+
+.services li::after {
+  content: "";
+  cursor: pointer;
+  background-image: url("../img/arrow.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 63px;
+  height: 63px;
+  background-color: #00b2ff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.services li:nth-of-type(1) {
+  background-image: url("../img/service-desktop-1.png");
+}
+
+.services li:nth-of-type(2) {
+  background-image: url("../img/service-desktop-2.png");
+}
+
+.services li:nth-of-type(3) {
+  background-image: url("../img/service-desktop-3.png");
+}
+
+.services a {
+  opacity: 1;
+  box-sizing: border-box;
+  display: block;
+  font-size: 20px;
+  line-height: 30px;
+  padding-top: 53px;
+  padding-left: 50px;
+  padding-right: 150px;
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+}
+
+.services a:hover {
+  opacity: 0.8;
+}
