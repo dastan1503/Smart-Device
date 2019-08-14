@@ -14,7 +14,7 @@
       <a href="#" class="header__logo">
         <picture>
           <source media="(max-width: 750px)" srcset="img/logo-header-mobile.png 1x, img/logo-header-mobile@2x.png 2x">
-          <img src="/img/logo-header.png" srcset="img/logo-header@2x.png 2x">
+          <img src="img/logo-header.png" srcset="img/logo-header@2x.png 2x">
         </picture>
       </a>
       <a href="mailto:info@sd.ru" class="header__mail">info@sd.ru</a>
@@ -112,7 +112,6 @@
   </main>
   <footer class="footer">
     <section class="form">
-      <img src="">
       <h2>Остались вопросы? Задайте их нам!</h2>
       <p>Мы проконсультируем вас бесплатно</p>
       <form>
@@ -124,32 +123,30 @@
         <label for="agreement" tabindex="0">Я согласен на обработку персональных данных</label>
       </form>
     </section>
-    <section>
-      <div>
+    <section class="footer__wrapper">
+      <div class="footer__social">
         <a href="#">
-          <img src="">
-          <h1>Smart Device</h2>
-          <p>умные технологии</p>
+          <img src="img/logo-footer.png" srcset="img/logo-footer@2x.png 2x">
         </a>
         <ul>
           <li>
-            <a href="">
-              <img src="">
+            <a href="" title="facebook">
+              <img src="../img/facebook.svg">
             </a>
           </li>
           <li>
-            <a href="">
-              <img src="">
+            <a href="" title="odnoklasniki">
+              <img src="../img/o-k.svg">
             </a>
           </li>
           <li>
-            <a href="">
-              <img src="">
+            <a href="" title="vkontakte">
+              <img src="../img/vk.svg">
             </a>
           </li>
         </ul>
       </div>
-      <div>
+      <div class="footer__sitemap">
         <h3>Разделы сайта</h3>
         <ul>
           <li>
@@ -175,32 +172,33 @@
           </li>
         </ul>
       </div>
-      <div>
+      <div class="footer__contacts">
         <h3>Наш офис</h3>
         <p>г. Мытищи, Олимпийский проспект, д.10</p>
-        <a href="">+7 (495) 589-40-50</a>
-        <a href="">+7 (925) 003-87-67</a>
-        <a href="">+7 (926) 926-080-79</a>
+        <p>+7 (495) 589-40-50</p>
+        <p>+7 (925) 003-87-67</p>
+        <p>+7 (926) 926-080-79</p>
       </div>
     </section>
-    <div>
+    <div class="footer__copyright">
       <p>Все права защищены</p>
       <p>1999-2018 SD Service Devices</p>
-      <a href="">Условия конфиденциальности</a>
-      <a href="">Developed by wow studio</a>
+      <a href="#" class="footer__conditions">Условия конфиденциальности</a>
+      <a href="#" class="footer__developer">Developed by wow studio</a>
     </div>
   </footer>
-  <div class="popup">
+  <div class="modal visually-hidden">
     <h2>Закажите звонок</h2>
     <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-    <form>
+    <form class="modal__form">
       <input type="text" name="" placeholder="Имя">
       <input type="tel" name="" placeholder="Телефон">
       <textarea placeholder="Ваш вопрос"></textarea>
-      <button>Отправить</button>
-      <input type="checkbox" name="" id="agreement-popup">
+      <button type="submit">Отправить</button>
+      <input type="checkbox" id="agreement-popup">
       <label for="agreement-popup">Я согласен на обработку персональных данных</label>
     </form>
+    <button class="modal__close"></button>
   </div>
 </body>
 </html>
