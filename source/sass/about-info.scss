@@ -59,3 +59,26 @@
     width: 532px;
   }
 }
+
+@media (max-width: 1200px) {
+  .about-info img {
+    display: none;
+  }
+
+  .about-info {
+    width: 290px;
+  }
+
+  .about-info div {
+    margin: 0;
+  }
+
+  .about-info h2 {
+    font-size: 28px;
+    margin-top: 29px;
+  }
+
+  .about-info p {
+    width: 290px;
+  }
+}

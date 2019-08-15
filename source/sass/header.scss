@@ -248,3 +248,55 @@
     display: none;
   }
 }
+
+@media (max-width: 768px) {
+  .header {
+    min-height: 620px;
+  }
+
+  .header__nav {
+    width: 287px;
+  }
+
+  .header__logo::after {
+    margin-left: 110px;
+  }
+
+  .header__mail {
+    margin-right: 23px;
+  }
+
+
+  .header__info {
+    width: 287px;
+  }
+
+  .header__info h2 {
+    font-size: 40px;
+    line-height: 47px;
+    width: 287px;
+    margin-top: 207px;
+    z-index: 10;
+  }
+
+  .header__info::after {
+    top: 20px;
+    background-image: url("../img/board-mobile.png");
+  }
+
+  .header__info p {
+    font-size: 16px;
+    width: 245px;
+  }
+
+  .header__info button {
+    content: "бесплатная консультация";
+    width: 287px;
+    margin-left: 0;
+    margin-top: 37px;
+  }
+
+  .header__info span {
+    display: none;
+  }
+}

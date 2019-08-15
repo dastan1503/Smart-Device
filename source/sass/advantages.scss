@@ -74,3 +74,23 @@
     margin-left: 27px;
   }
 }
+
+@media (max-width: 768px) {
+  .advantages {
+    width: 290px;
+  }
+
+  .advantages div {
+    width: 290px;
+    min-height: 232px;
+  }
+
+  .advantages h3 {
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  .advantages p {
+    width: 245px;
+  }
+}
