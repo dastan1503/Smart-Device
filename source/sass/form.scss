@@ -5,27 +5,28 @@
   min-height: 670px;
   background-image: url("../img/airplane-desktop.png");
   background-repeat: no-repeat;
-  background-position: calc(50% - 370px) 180px;
+  background-position: calc(50% - 350px) 160px;
 }
 
 .form h2 {
-  margin-top: 96px;
+  margin-top: 95px;
   margin-bottom: 0;
   font-size: 36px;
   line-height: 51px;
   font-weight: normal;
   position: relative;
-  left: 50%;
+  left: calc(50% + 20px);
 }
 
 .form p {
   position: relative;
-  left: 50%;
+  left: calc(50% + 25px);
   font-size: 16px;
   line-height: 22px;
   width: 570px;
   font-family: "PT Mono", "Courier New", monospace;
-  margin-bottom: 49px;
+  margin-bottom: 52px;
+  margin-top: 5px;
 }
 
 .form form {
@@ -35,7 +36,7 @@
   flex-wrap: wrap;
   width: 570px;
   position: relative;
-  left: 50%;
+  left: calc(50% + 25px);
 }
 
 .form input,
