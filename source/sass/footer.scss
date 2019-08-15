@@ -152,3 +152,60 @@
     width: 720px;
   }
 }
+
+@media (max-width: 768px) {
+  .footer__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__social {
+    flex-direction: column;
+  }
+
+  .footer__social::after {
+    left: calc(50% - 110px);
+  }
+
+  .footer__logo {
+    margin-right: 0;
+    margin-bottom: 80px;
+  }
+
+  .footer__social ul {
+    width: 290px;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .footer__sitemap {
+    width: 290px;
+    margin-right: 0;
+  }
+
+  .footer__sitemap li {
+    font-size: 15px;
+  }
+
+  .footer__sitemap ul {
+    height: auto;
+  }
+
+  .footer__contacts {
+    width: 290px;
+  }
+
+  .footer__contacts p {
+    width: 272px;
+  }
+
+  .footer__copyright p {
+    display: none;
+  }
+
+  .footer__copyright {
+    width: 290px;
+    padding-top: 28px;
+    flex-direction: column;
+  }
+}

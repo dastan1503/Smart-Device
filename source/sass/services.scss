@@ -124,3 +124,40 @@
     line-height: 30px;
   }
 }
+
+
+@media (max-width: 768px) {
+  .services h3 {
+    width: 290px;
+    font-size: 28px;
+  }
+
+  .services ul {
+    width: 290px;
+    margin-bottom: 0;
+  }
+
+  .services li {
+    min-height: 256px;
+    width: 290px;
+    margin-bottom: 35px;
+  }
+
+  .services li:nth-of-type(1) {
+    background-image: url("../img/service-mobile-1.png");
+  }
+
+  .services li:nth-of-type(2) {
+    background-image: url("../img/service-mobile-2.png");
+  }
+
+  .services li:nth-of-type(3) {
+    background-image: url("../img/service-mobile-3.png");
+  }
+
+  .services a {
+    padding-top: 23px;
+    padding-left: 35px;
+    padding-right: 90px;
+  }
+}

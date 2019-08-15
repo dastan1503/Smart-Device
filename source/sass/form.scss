@@ -141,3 +141,50 @@
     margin-bottom: 50px;
   }
 }
+
+@media (max-width: 768px) {
+  .form {
+    background-image: none;
+  }
+
+  .form input,
+  .form textarea {
+    width: 290px;
+  }
+
+  .form form,
+  .form h2,
+  .form p {
+    position: static;
+    width: 290px;
+    margin: 0 auto;
+  }
+
+  .form h2 {
+    margin-top: 33px;
+    font-size: 28px;
+  }
+
+  .form p {
+    margin-bottom: 0;
+  }
+
+  .form input:first-child {
+    margin-right: 0;
+  }
+
+  .form input {
+    margin-top: 30px;
+  }
+
+  .form textarea {
+    min-height: 104px;
+    margin: 30px auto;
+  }
+
+  .form button {
+    margin-right: 0;
+    width: 290px;
+    margin-bottom: 30px;
+  }
+}
