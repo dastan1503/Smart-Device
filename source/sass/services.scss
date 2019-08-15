@@ -88,18 +88,23 @@
 
 @media (max-width: 1200px) {
   .services h3 {
-    width: 720px;
+    padding-top: 47px;
+    font-size: 32px;
+    width: 620px;
+    padding-right: 70px;
+    margin-bottom: 40px;
   }
 
   .services ul {
     width: 720px;
+    padding-bottom: 35px;
     margin-bottom: 0;
   }
 
   .services li {
     min-height: 256px;
     width: 715px;
-    margin-bottom: 35px;
+    margin-bottom: 45px;
   }
 
   .services li:nth-of-type(1) {
@@ -115,9 +120,9 @@
   }
 
   .services a {
-    padding-top: 44px;
-    padding-left: 44px;
-    padding-right: 500px;
+    padding-top: 42px;
+    padding-left: 40px;
+    padding-right: 520px;
   }
 
   .services p {
@@ -129,19 +134,23 @@
 
 @media (max-width: 768px) {
   .services h3 {
+    padding: 47px 0 0 17px;
     width: 290px;
     font-size: 28px;
+    line-height: 140%;
+    margin-bottom: 45px;
   }
 
   .services ul {
     width: 290px;
     margin-bottom: 0;
+    padding-left: 0;
   }
 
   .services li {
     min-height: 256px;
     width: 290px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 
   .services li:nth-of-type(1) {
@@ -157,7 +166,7 @@
   }
 
   .services a {
-    padding-top: 23px;
+    padding-top: 20px;
     padding-left: 35px;
     padding-right: 90px;
   }
