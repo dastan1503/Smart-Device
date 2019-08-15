@@ -25,6 +25,7 @@
   font-size: 36px;
   line-height: 51px;
   font-weight: normal;
+  margin-top: 70px;
 }
 
 .about-info p {
@@ -41,4 +42,20 @@
   height: 43px;
   color: #00b2ff;
   text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+  .about-info {
+    width: 720px;
+    margin-top: 0;
+  }
+
+  .about-info h2 {
+    font-size: 32px;
+    margin-top: 29px;
+  }
+
+  .about-info p {
+    width: 532px;
+  }
 }

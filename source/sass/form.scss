@@ -117,3 +117,27 @@
   background-position: center center;
   background-repeat: no-repeat;
 }
+
+@media (max-width: 1200px) {
+  .form {
+    background-image: none;
+  }
+
+  .form form,
+  .form h2,
+  .form p {
+    position: static;
+    width: 590px;
+    margin: 0 auto;
+  }
+
+  .form h2 {
+    margin-top: 83px;
+    font-size: 32px;
+  }
+
+  .form p {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+}

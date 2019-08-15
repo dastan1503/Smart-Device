@@ -94,3 +94,61 @@
 .footer__developer {
   text-align: right;
 }
+
+@media (max-width: 1200px) {
+  .footer__wrapper {
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+
+  .footer__social {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(98, 105, 98, 0.2);
+    padding-bottom: 20px;
+  }
+
+  .footer__social::after {
+    content: "1999-2018 SD Service Devices";
+    text-transform: uppercase;
+    position: absolute;
+    left: 42%;
+    font-size: 13px;
+    font-family: "PT Mono", "Courier New", monospace;
+    opacity: 0.5;
+  }
+
+  .footer__logo {
+    margin-right: 144px;
+  }
+
+  .footer__social ul {
+    width: 360px;
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+  .footer__sitemap {
+    width: 360px;
+    margin-right: 20px;
+  }
+
+  .footer__sitemap ul {
+    flex-wrap: nowrap;
+  }
+
+  .footer__contacts {
+    width: 340px;
+  }
+
+  .footer__copyright p {
+    display: none;
+  }
+
+  .footer__copyright {
+    width: 720px;
+  }
+}

@@ -47,3 +47,30 @@
 .advantages div:hover h3 {
   color: #ffffff;
 }
+
+@media (max-width: 1200px) {
+  .advantages {
+    width: 720px;
+    margin-top: 54px;
+  }
+
+  .advantages div {
+    width: 345px;
+    min-height: 232px;
+  }
+
+  .advantages h3 {
+    margin-left: 27px;
+    font-size: 24px;
+  }
+
+  .advantages p {
+    width: 297px;
+    margin-left: 27px;
+  }
+
+  .advantages svg {
+    margin-top: 27px;
+    margin-left: 27px;
+  }
+}

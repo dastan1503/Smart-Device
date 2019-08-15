@@ -157,3 +157,94 @@
   top: 589px;
   left: -50px;
 }
+
+@media (max-width: 1200px) {
+  .header {
+    min-height: 650px;
+  }
+
+  .header__nav {
+    width: 719px;
+  }
+
+  .header a span {
+    display: none;
+  }
+
+  .header__nav button {
+    display: none;
+  }
+
+  .header__mail::before {
+    background-image: url("../img/mail-tablet.png");
+    width: 26px;
+    height: 19px;
+  }
+
+  .header__tel::before {
+    background-image: url("../img/phone-tablet.png");
+    width: 24px;
+    height: 24px;
+  }
+
+  .header__mail {
+    width: 26px;
+    margin-right: 34px;
+  }
+
+  .header__tel {
+    width: 24px;
+  }
+
+  .header a::before {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .header__logo::after {
+    margin-left: 361px;
+  }
+
+  .header__info {
+    width: 719px;
+  }
+
+  .header__info h2 {
+    font-size: 60px;
+    line-height: 70px;
+    width: 470px;
+    margin-top: 117px;
+  }
+
+  .header__info::after {
+    width: 465px;
+    height: 340px;
+    top: 42px;
+    right: -200px;
+    display: block;
+    position: absolute;
+    background-image: url("../img/board-tablet.png");
+  }
+
+  .header__info p {
+    font-size: 18px;
+    width: 356px;
+    padding-left: 62px;
+  }
+
+  .header__info p::before {
+    width: 33px;
+  }
+
+  .header__info button {
+    font-size: 16px;
+    width: 379px;
+    padding: 0;
+    margin-left: 60px;
+    margin-top: 37px;
+  }
+
+  .header__info span {
+    display: none;
+  }
+}
