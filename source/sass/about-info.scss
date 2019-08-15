@@ -49,25 +49,39 @@
   .about-info {
     width: 720px;
     margin-top: 0;
+    background: url("../img/year-tablet.png") no-repeat;
+    background-position: -25px 25px;
+    margin-bottom: 58px;
   }
 
   .about-info h2 {
     font-size: 32px;
-    margin-top: 29px;
+    margin-top: 25px;
+  }
+
+  .about-info span {
+    display: none;
   }
 
   .about-info p {
-    width: 532px;
+    width: 535px;
+  }
+
+  .about-info p:last-of-type::after {
+    content: "..";
+    display: inline;
+    text-indent: -2;
+  }
+
+  .about-info button {
+    margin-top: 5px;
   }
 }
 
 @media (max-width: 768px) {
-  .about-info img {
-    display: none;
-  }
-
   .about-info {
     width: 290px;
+    background: none;
   }
 
   .about-info div {
@@ -76,10 +90,17 @@
 
   .about-info h2 {
     font-size: 28px;
-    margin-top: 29px;
+    margin-top: 10px;
+    margin-bottom: 0;
   }
 
   .about-info p {
     width: 290px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+  .about-info button {
+    margin-bottom: 10px;
   }
 }
