@@ -5,9 +5,9 @@
   background-color: #203c42;
   background-image: url("../img/background.png");
   color: #ffffff;
-  min-height: 950px;
+  min-height: 845px;
   width: 100%;
-  padding-top: 52px;
+  padding-top: 32px;
 }
 
 .header__nav {
@@ -15,11 +15,15 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  width: 1411px;
+  width: 1420px;
   margin: 0 auto;
 }
 
 .header__logo {
+  background: url("../img/logo-header.png") no-repeat;
+  margin-left: 10px;
+  height: 52px;
+  width: 202px;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -33,7 +37,7 @@
   height: 11px;
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
-  margin-left: 118px;
+  margin-left: 322px;
 }
 
 .header a {
@@ -51,7 +55,7 @@
   content: "";
   display: block;
   background-image: url("../img/mail-desktop.png");
-  width: 19px;
+  width: 20px;
   height: 14px;
   margin-right: 20px;
 }
@@ -62,9 +66,10 @@
 
 .header__tel::before {
   content: "";
+  display: block;
   background-image: url("../img/phone-desktop.png");
-  width: 17px;
-  height: 17px;
+  width: 18px;
+  height: 18px;
   margin-right: 16px;
 }
 
@@ -76,9 +81,10 @@
   border: 1px solid #ffffff;
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 14px;
   width: 180px;
   height: 45px;
-  margin-left: 38px;
+  margin-left: 50px;
 }
 
 .header__nav button:hover {
@@ -96,8 +102,8 @@
   content: "";
   width: 705px;
   height: 515px;
-  top: 150px;
-  right: -50px;
+  top: 172px;
+  right: -85px;
   display: block;
   position: absolute;
   background-image: url("../img/board-desktop.png");
@@ -106,14 +112,15 @@
 }
 
 .header__info h2 {
-  font-size: 88px;
+  font-size: 80px;
   text-transform: uppercase;
   font-weight: bold;
-  margin-top: 232px;
+  margin-top: 267px;
+  letter-spacing: 0.07em;
 }
 
 .header__info p {
-  padding-left: 92px;
+  padding-left: 100px;
   position: relative;
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 22px;
@@ -125,8 +132,8 @@
   content: "";
   display: block;
   position: absolute;
-  top: 20px;
-  left: 0;
+  top: 15px;
+  left: 7px;
   width: 66px;
   height: 2px;
   background-color: #ffffff;
@@ -146,25 +153,36 @@
   font-weight: bold;
   width: 407px;
   height: 55px;
-  margin-left: 92px;
+  margin-top: 40px;
+  margin-left: 100px;
 }
 
 .header__info span {
+  font-family: "PT Mono", "Courier New", monospace;
   position: absolute;
   transform: rotate(-90deg);
   font-size: 14px;
   opacity: 0.5;
-  top: 589px;
-  left: -50px;
+  top: 648px;
+  left: -30px;
 }
 
 @media (max-width: 1200px) {
   .header {
-    min-height: 650px;
+    min-height: 666px;
+    padding-top: 20px;
   }
 
   .header__nav {
     width: 719px;
+  }
+
+  .header__logo {
+    margin-left: 0;
+  }
+
+  .header__logo::after {
+    margin-left: 562px;
   }
 
   .header a span {
@@ -201,10 +219,6 @@
     margin-right: 0;
   }
 
-  .header__logo::after {
-    margin-left: 361px;
-  }
-
   .header__info {
     width: 719px;
   }
@@ -214,13 +228,15 @@
     line-height: 70px;
     width: 470px;
     margin-top: 117px;
+    margin-left: 60px;
+    margin-bottom: 28px;
   }
 
   .header__info::after {
     width: 465px;
     height: 340px;
     top: 42px;
-    right: -200px;
+    right: -230px;
     display: block;
     position: absolute;
     background-image: url("../img/board-tablet.png");
@@ -228,11 +244,15 @@
 
   .header__info p {
     font-size: 18px;
+    line-height: 156%;
     width: 356px;
-    padding-left: 62px;
+    padding-left: 112px;
+    margin-top: 0;
   }
 
   .header__info p::before {
+    top: 15px;
+    left: 70px;
     width: 33px;
   }
 
@@ -240,8 +260,8 @@
     font-size: 16px;
     width: 379px;
     padding: 0;
-    margin-left: 60px;
-    margin-top: 37px;
+    margin-left: 115px;
+    margin-top: 55px;
   }
 
   .header__info span {
@@ -251,49 +271,63 @@
 
 @media (max-width: 768px) {
   .header {
-    min-height: 620px;
+    min-height: 632px;
+    padding-top: 15px;
   }
 
   .header__nav {
     width: 287px;
   }
 
+  .header__logo {
+    background: url("../img/logo-header-mobile.png") no-repeat;
+    height: 38px;
+  }
+
   .header__logo::after {
-    margin-left: 110px;
+    margin-left: 152px;
   }
 
   .header__mail {
     margin-right: 23px;
   }
 
-
   .header__info {
     width: 287px;
   }
 
   .header__info h2 {
+    position: relative;
     font-size: 40px;
     line-height: 47px;
     width: 287px;
-    margin-top: 207px;
-    z-index: 10;
+    margin-top: 232px;
+    margin-left: 0;
+    z-index: 2;
   }
 
   .header__info::after {
-    top: 20px;
+    top: 38px;
+    left: 10px;
     background-image: url("../img/board-mobile.png");
+    z-index: 1;
   }
 
   .header__info p {
+    padding-left: 50px;
     font-size: 16px;
     width: 245px;
+  }
+
+  .header__info p::before {
+    left: 0;
   }
 
   .header__info button {
     content: "бесплатная консультация";
     width: 287px;
     margin-left: 0;
-    margin-top: 37px;
+    margin-top: 42px;
   }
 
   .header__info span {
