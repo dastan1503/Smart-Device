@@ -108,6 +108,7 @@
   .footer__wrapper {
     flex-wrap: wrap;
     padding-top: 20px;
+    padding-bottom: 15px;
   }
 
   .footer__social {
@@ -117,16 +118,18 @@
     align-items: center;
     width: 100%;
     border-bottom: 1px solid rgba(98, 105, 98, 0.2);
-    padding-bottom: 20px;
+    padding-left: 0;
+    padding-bottom: 18px;
   }
 
   .footer__social::after {
     content: "1999-2018 SD Service Devices";
     text-transform: uppercase;
     position: absolute;
-    left: 42%;
+    left: 44%;
     font-size: 13px;
     font-family: "PT Mono", "Courier New", monospace;
+    letter-spacing: 0.04em;
     opacity: 0.5;
   }
 
@@ -140,17 +143,33 @@
     margin: 0;
   }
 
+  .footer__social li {
+    margin-right: 0;
+    margin-left: 15px;
+  }
+
   .footer__sitemap {
     width: 360px;
+    margin-top: 35px;
     margin-right: 20px;
   }
 
   .footer__sitemap ul {
     flex-wrap: nowrap;
+    height: auto;
+  }
+
+  .footer__sitemap li {
+    margin-bottom: 2px;
   }
 
   .footer__contacts {
+    margin-top: 35px;
     width: 340px;
+  }
+
+  .footer__contacts p {
+    margin-bottom: 3px;
   }
 
   .footer__copyright p {
@@ -159,6 +178,9 @@
 
   .footer__copyright {
     width: 720px;
+    align-items: flex-start;
+    padding-top: 25px;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -166,19 +188,23 @@
   .footer__wrapper {
     flex-direction: column;
     align-items: center;
+    padding-bottom: 0;
   }
 
   .footer__social {
     flex-direction: column;
+    padding-bottom: 45px;
   }
 
   .footer__social::after {
-    left: calc(50% - 110px);
+    left: calc(50% - 115px);
+    top: 105px;
   }
 
   .footer__logo {
     margin-right: 0;
-    margin-bottom: 80px;
+    margin-top: 25px;
+    margin-bottom: 75px;
   }
 
   .footer__social ul {
@@ -187,9 +213,14 @@
     margin: 0;
   }
 
+  .footer__social li {
+    margin: 0 7px;
+  }
+
   .footer__sitemap {
     width: 290px;
-    margin-right: 0;
+    margin: 0 auto;
+    padding: 28px 0;
   }
 
   .footer__sitemap li {
@@ -200,21 +231,73 @@
     height: auto;
   }
 
-  .footer__contacts {
+  .footer__copyright p {
+    display: none;
+  }
+
+  .footer h3 {
+    display: flex;
     width: 290px;
+    margin: 0 auto;
+  }
+
+  .footer h3 ~ p,
+  .footer h3 + ul {
+    display: none;
+  }
+
+  .footer h3::after {
+    content: "";
+    display: block;
+    background-image: url("../img/icon-plus.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 16px;
+    height: 16px;
+    flex-grow: 1;
+  }
+
+  .footer__contacts {
+    margin: 0 auto;
+    padding: 28px 0 28px 0;
+    width: 100%;
+    border-top: 1px solid rgba(98, 105, 98, 0.2);
   }
 
   .footer__contacts p {
-    width: 272px;
+    width: 290px;
+    margin: 0 auto;
   }
 
-  .footer__copyright p {
-    display: none;
+  .footer__contacts p:first-of-type {
+    margin-top: 20px;
+  }
+
+  .footer h3:focus + ul,
+  .footer h3:active + ul,
+  .footer h3:focus ~ p,
+  .footer h3:active ~ p,
+  .footer h3 ~ p:hover,
+  .footer h3 + ul:hover {
+    display: block;
+  }
+
+  .footer h3:focus::after,
+  .footer h3:active::after {
+    background-image: url("../img/icon-minus.svg");
+  }
+
+  .footer h3:focus,
+  .footer h3:active {
+    border: none;
+    outline: none;
   }
 
   .footer__copyright {
     width: 290px;
     padding-top: 28px;
     flex-direction: column;
+    align-items: center;
+    padding-bottom: 28px;
   }
 }

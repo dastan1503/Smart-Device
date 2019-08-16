@@ -108,7 +108,7 @@
   position: absolute;
   background-image: url("../img/board-desktop.png");
   background-repeat: no-repeat;
-  overflow: visible;
+  overflow-x: hidden;
 }
 
 .header__info h2 {
@@ -237,10 +237,10 @@
   }
 
   .header__info::after {
-    width: 465px;
+    width: 260px;
     height: 340px;
     top: 42px;
-    right: -230px;
+    right: -20px;
     display: block;
     position: absolute;
     background-image: url("../img/board-tablet.png");
