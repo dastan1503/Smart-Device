@@ -30,6 +30,24 @@
   flex-grow: 1;
 }
 
+@media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+  .header__logo {
+    background: url("../img/logo-header@2x.png") no-repeat;
+  }
+
+  .header__mail::before {
+    background-image: url("../img/mail-desktop@2x.png");
+  }
+
+  .header__tel::before {
+    background-image: url("../img/phone-desktop@2x.png");
+  }
+
+  .header__info::after {
+    background-image: url("../img/board-desktop@2x.png");
+  }
+}
+
 .header__logo::after {
   content: "";
   display: block;
@@ -271,6 +289,20 @@
   .header__info span {
     display: none;
   }
+
+  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+    .header__mail::before {
+      background-image: url("../img/mail-tablet@2x.png");
+    }
+
+    .header__tel::before {
+      background-image: url("../img/phone-tablet@2x.png");
+    }
+
+    .header__info::after {
+      background-image: url("../img/board-tablet@2x.png");
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -339,5 +371,15 @@
 
   .header__info span {
     display: none;
+  }
+
+  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+    .header__logo {
+      background: url("../img/logo-header-mobile@2x.png") no-repeat;
+    }
+
+    .header__info::after {
+      background-image: url("../img/board-mobile@2x.png");
+    }
   }
 }
