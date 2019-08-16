@@ -11,6 +11,7 @@
 .form h2 {
   margin-top: 95px;
   margin-bottom: 0;
+  width: 545px;
   font-size: 36px;
   line-height: 51px;
   font-weight: normal;
@@ -133,19 +134,35 @@
   }
 
   .form h2 {
-    margin-top: 83px;
+    margin-top: 78px;
     font-size: 32px;
+  }
+
+  .form input {
+    width: 280px;
+    height: 52px;
+  }
+
+  .form textarea {
+    min-height: 160px;
+    margin-top: 45px;
   }
 
   .form p {
     font-size: 16px;
+    margin-top: 13px;
     margin-bottom: 50px;
+  }
+
+  .form button {
+    width: 280px;
   }
 }
 
 @media (max-width: 768px) {
   .form {
     background-image: none;
+    min-height: 640px;
   }
 
   .form input,
@@ -162,12 +179,14 @@
   }
 
   .form h2 {
-    margin-top: 33px;
+    margin-top: 25px;
+    line-height: 140%;
     font-size: 28px;
   }
 
   .form p {
-    margin-bottom: 0;
+    margin-top: 15px;
+    margin-bottom: 25px;
   }
 
   .form input:first-child {
@@ -175,12 +194,14 @@
   }
 
   .form input {
-    margin-top: 30px;
+    margin-top: 0;
+    margin-bottom: 31px;
   }
 
   .form textarea {
     min-height: 104px;
-    margin: 30px auto;
+    margin-top: 0;
+    margin-bottom: 30px;
   }
 
   .form button {
