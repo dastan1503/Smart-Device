@@ -179,14 +179,22 @@
   font-weight: bold;
 }
 
-.header__info span {
+.header__scroll {
+  background: none;
+  border: none;
+  color: #ffffff;
   font-family: "PT Mono", "Courier New", monospace;
   position: absolute;
   transform: rotate(-90deg);
   font-size: 14px;
-  opacity: 0.5;
+  opacity: 0.8;
   top: 648px;
   left: -30px;
+  cursor: pointer;
+}
+
+.header__scroll:hover {
+  opacity: 1;
 }
 
 @media (max-width: 1199px) {
@@ -343,6 +351,7 @@
   }
 
   .header__info::after {
+    width: auto;
     top: 38px;
     left: 10px;
     background-image: url("../img/board-mobile.png");
