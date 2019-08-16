@@ -5,27 +5,29 @@
   min-height: 670px;
   background-image: url("../img/airplane-desktop.png");
   background-repeat: no-repeat;
-  background-position: calc(50% - 370px) 180px;
+  background-position: calc(50% - 350px) 160px;
 }
 
 .form h2 {
-  margin-top: 96px;
+  margin-top: 95px;
   margin-bottom: 0;
+  width: 545px;
   font-size: 36px;
   line-height: 51px;
   font-weight: normal;
   position: relative;
-  left: 50%;
+  left: calc(50% + 20px);
 }
 
 .form p {
   position: relative;
-  left: 50%;
+  left: calc(50% + 25px);
   font-size: 16px;
   line-height: 22px;
   width: 570px;
   font-family: "PT Mono", "Courier New", monospace;
-  margin-bottom: 49px;
+  margin-bottom: 52px;
+  margin-top: 5px;
 }
 
 .form form {
@@ -35,7 +37,7 @@
   flex-wrap: wrap;
   width: 570px;
   position: relative;
-  left: 50%;
+  left: calc(50% + 25px);
 }
 
 .form input,
@@ -118,9 +120,16 @@
   background-repeat: no-repeat;
 }
 
+@media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+  .form {
+    background-image: url("../img/airplane-desktop@2x.png");
+  }
+}
+
 @media (max-width: 1200px) {
   .form {
     background-image: none;
+    min-height: 665px;
   }
 
   .form form,
@@ -132,19 +141,35 @@
   }
 
   .form h2 {
-    margin-top: 83px;
+    margin-top: 78px;
     font-size: 32px;
+  }
+
+  .form input {
+    width: 280px;
+    height: 52px;
+  }
+
+  .form textarea {
+    min-height: 160px;
+    margin-top: 45px;
   }
 
   .form p {
     font-size: 16px;
+    margin-top: 13px;
     margin-bottom: 50px;
+  }
+
+  .form button {
+    width: 280px;
   }
 }
 
 @media (max-width: 768px) {
   .form {
     background-image: none;
+    min-height: 640px;
   }
 
   .form input,
@@ -161,12 +186,14 @@
   }
 
   .form h2 {
-    margin-top: 33px;
+    margin-top: 25px;
+    line-height: 140%;
     font-size: 28px;
   }
 
   .form p {
-    margin-bottom: 0;
+    margin-top: 15px;
+    margin-bottom: 25px;
   }
 
   .form input:first-child {
@@ -174,12 +201,14 @@
   }
 
   .form input {
-    margin-top: 30px;
+    margin-top: 0;
+    margin-bottom: 31px;
   }
 
   .form textarea {
     min-height: 104px;
-    margin: 30px auto;
+    margin-top: 0;
+    margin-bottom: 30px;
   }
 
   .form button {
