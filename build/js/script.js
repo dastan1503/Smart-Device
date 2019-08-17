@@ -54,4 +54,25 @@
     closePopupEnter();
     closeClick();
   };
+
+  // обработка скроллинга
+  var scrollHeight = Number(document.querySelector('.header').clientHeight);
+  var scrollButton = document.querySelector('.header__scroll');
+
+  scrollButton.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === KEYCODE_ENTER) {
+      scrolling();
+    }
+  });
+
+  scrollButton.addEventListener('click', function () {
+    scrolling();
+  });
+
+  var scrolling = function () {
+    if (pageYOffset < scrollHeight) {
+      window.setTimeout(scrolling, 10);
+      window.scrollBy(0, 2);
+    }
+  };
 })();

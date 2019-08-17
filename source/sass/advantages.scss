@@ -15,7 +15,7 @@
   border: 1px solid #ebebeb;
   border-left: 3px solid #00b2ff;
   margin-bottom: 30px;
-  min-height: 297px;
+  padding-bottom: 49px;
 }
 
 .advantages h3 {
@@ -35,6 +35,7 @@
 .advantages p {
   font-family: "PT Mono", "Courier New", monospace;
   margin-left: 42px;
+  margin-bottom: 0;
   width: 483px;
   font-size: 16px;
 }
@@ -43,6 +44,8 @@
   cursor: pointer;
   background: #00b2ff;
   color: #ffffff;
+  border: 1px solid #00b2ff;
+  border-left: 3px solid #00b2ff;
 }
 
 .advantages div:hover svg path {
@@ -53,7 +56,7 @@
   color: #ffffff;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .advantages {
     width: 720px;
     margin-top: 54px;
@@ -67,7 +70,7 @@
 
   .advantages div {
     width: 345px;
-    min-height: 232px;
+    padding-bottom: 20px;
   }
 
   .advantages h3 {
@@ -83,7 +86,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .advantages {
     margin-top: 36px;
     width: 290px;
@@ -91,7 +94,6 @@
 
   .advantages div {
     width: 290px;
-    min-height: 232px;
     margin-bottom: 20px;
     border-left: 2px solid #00b2ff;
   }

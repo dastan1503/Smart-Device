@@ -4,6 +4,7 @@
   color: #ffffff;
   min-height: 670px;
   background-image: url("../img/airplane-desktop.png");
+  background-size: 511px 288px;
   background-repeat: no-repeat;
   background-position: calc(50% - 350px) 160px;
 }
@@ -67,6 +68,8 @@
 }
 
 .form textarea {
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: 16px;
   width: 570px;
   min-height: 154px;
   margin-top: 40px;
@@ -85,6 +88,11 @@
   font-size: 14px;
   font-weight: bold;
   margin-right: 38px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  opacity: 0.8;
 }
 
 .form input[type="checkbox"] {
@@ -99,6 +107,7 @@
   width: 262px;
   opacity: 0.8;
   cursor: pointer;
+  outline: none;
 }
 
 .form label:hover {
@@ -126,7 +135,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .form {
     background-image: none;
     min-height: 665px;
@@ -166,7 +175,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .form {
     background-image: none;
     min-height: 640px;
