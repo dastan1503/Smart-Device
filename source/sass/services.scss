@@ -34,6 +34,7 @@
   min-height: 620px;
   width: 370px;
   background-repeat: no-repeat;
+  background-size: 370px 620px;
 }
 
 .services li::after {
@@ -122,6 +123,7 @@
     min-height: 256px;
     width: 715px;
     margin-bottom: 45px;
+    background-size: 715px 256px;
   }
 
   .services li:nth-of-type(3n-2) {
@@ -183,6 +185,7 @@
     min-height: 256px;
     width: 290px;
     margin-bottom: 30px;
+    background-size: 290px 256px;
   }
 
   .services li:nth-of-type(3n-2) {

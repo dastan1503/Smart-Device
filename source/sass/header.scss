@@ -21,6 +21,7 @@
 
 .header__logo {
   background: url("../img/logo-header.png") no-repeat;
+  background-size: 202px 52px;
   margin-left: 10px;
   height: 52px;
   width: 202px;
@@ -32,7 +33,7 @@
 
 @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
   .header__logo {
-    background: url("../img/logo-header@2x.png") no-repeat;
+    background-image: url("../img/logo-header@2x.png");
   }
 
   .header__mail::before {
@@ -73,6 +74,8 @@
   content: "";
   display: block;
   background-image: url("../img/mail-desktop.png");
+  background-size: 19px 14px;
+  background-repeat: no-repeat;
   width: 20px;
   height: 14px;
   margin-right: 20px;
@@ -86,6 +89,8 @@
   content: "";
   display: block;
   background-image: url("../img/phone-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
   width: 18px;
   height: 18px;
   margin-right: 16px;
@@ -125,6 +130,7 @@
   display: block;
   position: absolute;
   background-image: url("../img/board-desktop.png");
+  background-size: 705px 515px;
   background-repeat: no-repeat;
   overflow-x: hidden;
 }
@@ -225,12 +231,14 @@
 
   .header__mail::before {
     background-image: url("../img/mail-tablet.png");
+    background-size: 26px 19px;
     width: 26px;
     height: 19px;
   }
 
   .header__tel::before {
     background-image: url("../img/phone-tablet.png");
+    background-size: 25px 24px;
     width: 24px;
     height: 24px;
   }
@@ -270,6 +278,7 @@
     display: block;
     position: absolute;
     background-image: url("../img/board-tablet.png");
+    background-size: 260px 340px;
   }
 
   .header__info p {
@@ -325,6 +334,7 @@
 
   .header__logo {
     background: url("../img/logo-header-mobile.png") no-repeat;
+    background-size: 38px 38px;
     height: 38px;
   }
 
@@ -355,6 +365,7 @@
     top: 38px;
     left: 10px;
     background-image: url("../img/board-mobile.png");
+    background-size: 294px 220px;
     z-index: 1;
   }
 
@@ -384,7 +395,7 @@
 
   @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
     .header__logo {
-      background: url("../img/logo-header-mobile@2x.png") no-repeat;
+      background-image: url("../img/logo-header-mobile@2x.png");
     }
 
     .header__info::after {
