@@ -16,7 +16,7 @@
 
 .footer h3 {
   font-size: 15px;
-  font-weight: normal;
+  font-weight: 400;
   text-transform: uppercase;
   margin-top: 0;
   color: #1b2d37;
@@ -68,7 +68,7 @@
 
 .footer__sitemap a,
 .footer__contacts p {
-  font-family: "PT Mono", "Courier New", monospace;
+  font-family: $font-mono;
   font-size: 15px;
   opacity: 0.5;
   color: #1b2d37;
@@ -92,7 +92,7 @@
 
 .footer__contacts a {
   text-decoration: none;
-  font-family: "PT Mono", "Courier New", monospace;
+  font-family: $font-mono;
   font-size: 15px;
   opacity: 0.5;
   color: #1b2d37;
@@ -115,7 +115,7 @@
 
 .footer__copyright p,
 .footer__copyright a {
-  font-family: "PT Mono", "Courier New", monospace;
+  font-family: $font-mono;
   font-size: 13px;
   text-transform: uppercase;
   color: #1b2d37;
@@ -161,7 +161,7 @@
     position: absolute;
     left: 44%;
     font-size: 13px;
-    font-family: "PT Mono", "Courier New", monospace;
+    font-family: $font-mono;
     letter-spacing: 0.04em;
     opacity: 0.5;
   }

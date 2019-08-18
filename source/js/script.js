@@ -71,8 +71,8 @@
 
   var scrolling = function () {
     if (pageYOffset < scrollHeight) {
-      window.setTimeout(scrolling, 10);
-      window.scrollBy(0, 2);
+      window.setTimeout(scrolling, 1);
+      window.scrollBy(0, 3);
     }
   };
 })();

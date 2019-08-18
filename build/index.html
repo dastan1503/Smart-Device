@@ -11,20 +11,22 @@
   <header class="header">
     <h1 class="visually-hidden">Smart Device</h1>
     <nav class="header__nav">
-      <a href="#" class="header__logo"></a>
+      <a href="#" class="header__logo">
+        <img alt="логотип" src="img/logo-header.png" srcset="img/logo-header@2x.png">
+      </a>
+      <button type="button" class="header__toggle"></button>
       <a href="mailto:info@sd.ru" class="header__mail"><span>info@sd.ru</span></a>
       <a href="tel:+74950005252" class="header__tel"><span>+7 (495) 000 52 52</span></a>
-      <button class="header__open-modal">Заказать звонок</button>
+      <button type="button" class="header__open-modal">Заказать звонок</button>
     </nav>
+  </header>
+  <main>
     <section class="header__info">
       <h2>Печатные платы</h2>
       <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-      <a href="#" class="header__free-response" title="free response"></a>
-      <button class="header__scroll">Cкролл вниз</button>
+      <a href="#" class="header__free-response" title="получить консультацию"></a>
+      <button type="button" class="header__scroll">Cкролл вниз</button>
     </section>
-  </header>
-
-  <main>
     <section class="advantages">
       <h2 class="visually-hidden">Services</h2>
       <div>
@@ -79,7 +81,7 @@
         <h2>О компании</h2>
         <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
         <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span>(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
-        <button>Подробнее</button>
+        <button type="button">Подробнее</button>
       </div>
     </section>
 
@@ -103,39 +105,40 @@
         </li>
       </ul>
     </section>
-  </main>
-  <footer class="footer">
     <section class="form">
       <h2>Остались вопросы? Задайте их нам!</h2>
       <p>Мы проконсультируем Вас бесплатно</p>
       <form>
         <input type="text" name="name" placeholder="Имя">
-        <input type="tel" name="phone" placeholder="Телефон">
+        <input type="tel" name="phone" placeholder="Телефон" required="" pattern="(\+?\d[- .]*){7,13}">
         <textarea placeholder="Ваш вопрос"></textarea>
-        <button>Задать вопрос</button>
+        <button type="submit">Задать вопрос</button>
         <input type="checkbox" name="agreement" id="agreement">
-        <label for="agreement" tabindex="0">Я согласен на обработку персональных данных</label>
+        <label for="agreement" tabindex="0" required="">Я согласен на обработку персональных данных</label>
       </form>
     </section>
+  </main>
+  <footer class="footer">
+
     <section class="footer__wrapper">
       <div class="footer__social">
         <a href="#" class="footer__logo">
-          <img src="img/logo-footer.png" srcset="img/logo-footer@2x.png 2x" alt="logo">
+          <img src="img/logo-footer.png" srcset="img/logo-footer@2x.png 2x" alt="на главную">
         </a>
         <ul>
           <li>
-            <a href="#" title="facebook">
-              <img src="img/facebook.svg" alt="facebook">
+            <a href="#" title="фейсбук">
+              <img src="img/facebook.svg" alt="фейсбук">
             </a>
           </li>
           <li>
-            <a href="#" title="odnoklasniki">
-              <img src="img/o-k.svg" alt="odnoklassniki">
+            <a href="#" title="одноклассники">
+              <img src="img/o-k.svg" alt="одноклассники">
             </a>
           </li>
           <li>
-            <a href="#" title="vkontakte">
-              <img src="img/vk.svg" alt="vkontakte">
+            <a href="#" title="вконтакте">
+              <img src="img/vk.svg" alt="вконтакте">
             </a>
           </li>
         </ul>
@@ -198,13 +201,13 @@
     <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
     <form class="modal__form">
       <input type="text" name="name" placeholder="Имя">
-      <input type="tel" name="phone" placeholder="Телефон">
+      <input type="tel" name="phone" placeholder="Телефон" required="" pattern="(\+?\d[- .]*){7,13}">
       <textarea placeholder="Ваш вопрос"></textarea>
       <button type="submit">Отправить</button>
-      <input type="checkbox" name="agreement" id="agreement-popup">
+      <input type="checkbox" name="agreement" id="agreement-popup" required="">
       <label for="agreement-popup">Я согласен на обработку персональных данных</label>
     </form>
-    <button class="modal__close"></button>
+    <button type="button" class="modal__close"></button>
   </div>
   <script src="js/script.js"></script>
 </body>

@@ -1,5 +1,5 @@
 .form {
-  background-color: #00b2ff;
+  background-color: $bg-blue;
   width: 100%;
   color: #ffffff;
   min-height: 670px;
@@ -10,12 +10,13 @@
 }
 
 .form h2 {
-  margin-top: 95px;
+  padding-top: 95px;
+  margin-top: 0;
   margin-bottom: 0;
   width: 545px;
   font-size: 36px;
   line-height: 51px;
-  font-weight: normal;
+  font-weight: 400;
   position: relative;
   left: calc(50% + 20px);
 }
@@ -26,7 +27,7 @@
   font-size: 16px;
   line-height: 22px;
   width: 570px;
-  font-family: "PT Mono", "Courier New", monospace;
+  font-family: $font-mono;
   margin-bottom: 52px;
   margin-top: 5px;
 }
@@ -52,7 +53,7 @@
 
 .form input::placeholder,
 .form textarea::placeholder {
-  font-family: "PT Mono", "Courier New", monospace;
+  font-family: $font-mono;
   font-size: 16px;
   color: #ffffff;
   opacity: 1;
@@ -68,7 +69,7 @@
 }
 
 .form textarea {
-  font-family: "PT Mono", "Courier New", monospace;
+  font-family: $font-mono;
   font-size: 16px;
   width: 570px;
   min-height: 154px;
@@ -83,10 +84,10 @@
   border-radius: 5px;
   height: 45px;
   border: 1px solid #ffffff;
-  background-color: #00b2ff;
+  background-color: $bg-blue$bg-blue;
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   margin-right: 38px;
   cursor: pointer;
 }
@@ -100,7 +101,7 @@
 }
 
 .form label {
-  font-family: "PT Mono", "Courier New", monospace;
+  font-family: $font-mono;
   font-size: 14px;
   line-height: 16px;
   display: flex;
@@ -150,7 +151,6 @@
   }
 
   .form h2 {
-    margin-top: 78px;
     font-size: 32px;
   }
 
@@ -195,7 +195,6 @@
   }
 
   .form h2 {
-    margin-top: 25px;
     line-height: 140%;
     font-size: 28px;
   }
