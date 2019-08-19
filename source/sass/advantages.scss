@@ -1,26 +1,33 @@
 .advantages {
   width: 1170px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
   margin: 0 auto;
-  margin-top: 112px;
+  margin-top: 0;
+  padding-top: 112px;
   padding-left: 20px;
 }
 
-.advantages div {
+.advantages ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.advantages li {
   position: relative;
   width: 566px;
-  border: 1px solid #ebebeb;
-  border-left: 3px solid #00b2ff;
+  border: $advantage-border;
+  border-left: 3px solid $bg-blue;
   margin-bottom: 30px;
-  padding-bottom: 49px;
+  padding-bottom: 65px;
+  cursor: pointer;
 }
 
 .advantages h3 {
-  color: #00b2ff;
-  font-weight: normal;
+  color: $bg-blue;
+  font-weight: 400;
   font-size: 24px;
   margin-top: 100px;
   margin-left: 40px;
@@ -33,33 +40,35 @@
 }
 
 .advantages p {
-  font-family: "PT Mono", "Courier New", monospace;
+  font-family: $font-mono;
   margin-left: 42px;
   margin-bottom: 0;
   width: 483px;
   font-size: 16px;
 }
 
-.advantages div:hover {
-  cursor: pointer;
-  background: #00b2ff;
+.advantages li:hover {
+  transition: all 0.5s linear;
+  background: $bg-blue;
   color: #ffffff;
-  border: 1px solid #00b2ff;
-  border-left: 3px solid #00b2ff;
+  border: 1px solid $bg-blue;
+  border-left: 3px solid $bg-blue;
 }
 
-.advantages div:hover svg path {
+.advantages li:hover svg path {
   fill: #ffffff;
+  transition: all 0.5s linear;
 }
 
-.advantages div:hover h3 {
+.advantages li:hover h3 {
   color: #ffffff;
+  transition: all 0.5s linear;
 }
 
 @media (max-width: 1199px) {
   .advantages {
     width: 720px;
-    margin-top: 54px;
+    margin-top: 0;
     padding: 0;
   }
 
@@ -68,7 +77,7 @@
     left: 25px;
   }
 
-  .advantages div {
+  .advantages li {
     width: 345px;
     padding-bottom: 20px;
   }
@@ -92,16 +101,17 @@
     width: 290px;
   }
 
-  .advantages div {
+  .advantages li {
     width: 290px;
     margin-bottom: 20px;
-    border-left: 2px solid #00b2ff;
+    border-left: 2px solid $bg-blue;
   }
 
   .advantages h3 {
     font-size: 20px;
     line-height: 140%;
-    font-weight: normal;
+    font-weight: 400;
+    margin-bottom: 5px;
   }
 
   .advantages p {

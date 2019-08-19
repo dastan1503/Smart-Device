@@ -5,20 +5,21 @@
   position: fixed;
   top: 135px;
   left: calc(50% - 240px);
-  background-color: #00b2ff;
+  background-color: $bg-blue;
   padding: 38px 40px 36px 40px;
+  z-index: 100;
 }
 
 .modal h2 {
   margin: 0;
   color: #ffffff;
   font-size: 28px;
-  font-weight: normal;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 
 .modal p {
-  font-family: "PT Mono", "Courier New", monospace;
+  font-family: $font-mono;
   color: #ffffff;
   font-size: 16px;
   line-height: 22px;
@@ -30,7 +31,7 @@
 .modal__form textarea {
   color: #ffffff;
   width: 385px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: $bg-input;
   padding-left: 25px;
   border: none;
   resize: none;
@@ -41,11 +42,12 @@
 .modal__form input:hover,
 .modal__form textarea:hover {
   opacity: 0.8;
+  transition: all 500ms linear;
 }
 
 .modal__form input::placeholder,
 .modal__form textarea::placeholder {
-  font-family: "PT Mono", "Courier New", monospace;
+  font-family: $font-mono;
   font-size: 16px;
   color: #ffffff;
   opacity: 1;
@@ -57,7 +59,7 @@
 }
 
 .modal__form textarea {
-  font-family: "PT Mono", "Courier New", monospace;
+  font-family: $font-mono;
   font-size: 16px;
   height: 91px;
   padding-top: 13px;
@@ -71,24 +73,28 @@
   width: 410px;
   border-radius: 5px;
   border: 1px solid #ffffff;
-  background-color: #00b2ff;
+  background-color: $bg-blue;
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   color: #ffffff;
   cursor: pointer;
 }
 
 .modal__form button[type="submit"]:hover {
   opacity: 0.8;
+  transition: all 500ms linear;
 }
 
 .modal__form input[type="checkbox"] {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
 }
 
 .modal__form label {
-  font-family: "PT Mono", "Courier New", monospace;
+  font-family: $font-mono;
   font-size: 14px;
   line-height: 16px;
   display: flex;
@@ -101,6 +107,7 @@
 
 .modal__form label:hover {
   opacity: 1;
+  transition: all 500ms linear;
 }
 
 .modal__form label::before {
@@ -124,7 +131,7 @@
   height: 17px;
   top: 20px;
   right: 19px;
-  background-color: #00b2ff;
+  background-color: $bg-blue;
   border: 0;
   background-image: url("../img/close.svg");
   cursor: pointer;

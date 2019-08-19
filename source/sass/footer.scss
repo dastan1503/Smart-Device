@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  background-color: #fafafa;
+  background-color: $bg-footer;
   display: flex;
   flex-direction: column;
 }
@@ -9,17 +9,17 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid rgba(98, 105, 98, 0.2);
+  border-bottom: $footer-border;
   padding-top: 65px;
-  padding-bottom: 35px;
+  padding-bottom: 45px;
 }
 
 .footer h3 {
   font-size: 15px;
-  font-weight: normal;
+  font-weight: 400;
   text-transform: uppercase;
   margin-top: 0;
-  color: #1b2d37;
+  color: $bg-dark;
   letter-spacing: 0.05em;
   margin-bottom: 25px;
 }
@@ -42,6 +42,7 @@
 
 .footer__social a:hover {
   opacity: 0.8;
+  transition: all 0.5s linear;
 }
 
 .footer__tumbler {
@@ -60,6 +61,7 @@
   flex-wrap: wrap;
   height: 100px;
   padding: 0;
+  margin: 0;
 }
 
 .footer__sitemap li {
@@ -68,15 +70,17 @@
 
 .footer__sitemap a,
 .footer__contacts p {
-  font-family: "PT Mono", "Courier New", monospace;
+  font-family: $font-mono;
   font-size: 15px;
+  line-height: 25px;
   opacity: 0.5;
-  color: #1b2d37;
+  color: $bg-dark;
   margin: 0;
 }
 
 .footer__sitemap a:hover {
   opacity: 0.8;
+  transition: all 0.5s linear;
 }
 
 .footer__contacts {
@@ -88,26 +92,27 @@
 .footer__contacts ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .footer__contacts a {
   text-decoration: none;
-  font-family: "PT Mono", "Courier New", monospace;
+  font-family: $font-mono;
   font-size: 15px;
   opacity: 0.5;
-  color: #1b2d37;
+  color: $bg-dark;
 }
 
 .footer__contacts a:hover {
   opacity: 0.8;
+  transition: all 0.5s linear;
 }
 
 .footer__copyright {
   width: 1410px;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   height: 52px;
   align-items: center;
@@ -115,15 +120,17 @@
 
 .footer__copyright p,
 .footer__copyright a {
-  font-family: "PT Mono", "Courier New", monospace;
+  width: 20%;
+  font-family: $font-mono;
   font-size: 13px;
   text-transform: uppercase;
-  color: #1b2d37;
+  color: $bg-dark;
   opacity: 0.5;
 }
 
 .footer__copyright a:hover {
   opacity: 0.8;
+  transition: all 0.5s linear;
 }
 
 .footer__developer {
@@ -131,7 +138,12 @@
   order: 5;
 }
 
+.footer__conditions {
+  text-align: center;
+}
+
 .footer__copyright::after {
+  width: 20%;
   content: "";
   display: block;
   order: 4;
@@ -141,7 +153,7 @@
   .footer__wrapper {
     flex-wrap: wrap;
     padding-top: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
   }
 
   .footer__social {
@@ -150,7 +162,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    border-bottom: 1px solid rgba(98, 105, 98, 0.2);
+    border-bottom: $footer-border;
     padding-left: 0;
     padding-bottom: 18px;
   }
@@ -161,7 +173,7 @@
     position: absolute;
     left: 44%;
     font-size: 13px;
-    font-family: "PT Mono", "Courier New", monospace;
+    font-family: $font-mono;
     letter-spacing: 0.04em;
     opacity: 0.5;
   }
@@ -193,7 +205,7 @@
   }
 
   .footer__sitemap li {
-    margin-bottom: 2px;
+    line-height: 25px;
   }
 
   .footer__contacts {
@@ -209,8 +221,17 @@
     display: none;
   }
 
+  .footer__copyright a {
+    width: auto;
+  }
+
+  .footer__copyright::after {
+    display: none;
+  }
+
   .footer__copyright {
     width: 720px;
+    justify-content: space-between;
     align-items: flex-start;
     padding-top: 25px;
     letter-spacing: 0.04em;
@@ -298,7 +319,7 @@
     margin: 0 auto;
     padding: 28px 0 28px 0;
     width: 100%;
-    border-top: 1px solid rgba(98, 105, 98, 0.2);
+    border-top: $footer-border;
   }
 
   .footer__contacts li:first-of-type {
@@ -330,10 +351,18 @@
   }
 
   .footer__copyright {
+    height: auto;
     width: 290px;
     padding-top: 28px;
     flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
     align-items: center;
     padding-bottom: 28px;
+  }
+
+  .footer__conditions {
+    margin-bottom: 25px;
   }
 }

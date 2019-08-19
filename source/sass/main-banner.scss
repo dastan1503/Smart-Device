@@ -1,0 +1,227 @@
+.main-banner {
+  width: 1411px;
+  margin: 0 auto;
+  position: relative;
+  background-color: transparent;
+  z-index: 10;
+  min-height: 560px;
+}
+
+.main-banner::after {
+  content: "";
+  width: 705px;
+  height: 515px;
+  top: -60px;
+  right: -85px;
+  display: block;
+  position: absolute;
+  background-image: url("../img/board-desktop.png"), url("../img/triangle-group.png");
+  background-size: 705px 515px, 635px 515px;
+  background-repeat: no-repeat, no-repeat;
+  overflow-x: hidden;
+}
+
+.main-banner h2 {
+  color: #ffffff;
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 232px;
+  letter-spacing: 0.07em;
+  line-height: 94px;
+  margin-bottom: 0;
+}
+
+.main-banner p {
+  color: #ffffff;
+  margin-top: 27px;
+  padding-left: 100px;
+  position: relative;
+  font-family: $font-mono;
+  font-size: 22px;
+  line-height: 34px;
+  width: 683px;
+}
+
+.main-banner p::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 7px;
+  width: 66px;
+  height: 2px;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.main-banner__response {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-blue;
+  border-radius: 5px;
+  border: none;
+  width: 407px;
+  height: 55px;
+  margin-top: 45px;
+  margin-left: 100px;
+}
+
+.main-banner__response:hover {
+  opacity: 0.8;
+  transition: all 500ms linear;
+}
+
+.main-banner__response span {
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.main-banner__response-mobile {
+  display: none;
+}
+
+.main-banner__scroll {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-family: $font-mono;
+  position: absolute;
+  transform: rotate(-90deg);
+  font-size: 14px;
+  opacity: 0.8;
+  top: 420px;
+  left: -35px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.main-banner__scroll:hover {
+  opacity: 1;
+  transition: all 500ms linear;
+}
+
+@media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+  .main-banner::after {
+    background-image: url("../img/board-desktop@2x.png"), url("../img/triangle-group@2x.png");
+  }
+}
+
+@media (max-width: 1199px) {
+  .main-banner {
+    width: 719px;
+    min-height: 550px;
+  }
+
+  .main-banner h2 {
+    font-size: 60px;
+    line-height: 70px;
+    width: 470px;
+    margin-top: 117px;
+    margin-left: 60px;
+    margin-bottom: 28px;
+  }
+
+  .main-banner::after {
+    width: 400px;
+    height: 400px;
+    top: -120px;
+    right: -25px;
+    display: block;
+    position: absolute;
+    background-image: url("../img/board-tablet.png"), url("../img/triangle-group.png");
+    background-size: 260px 340px, 500px 400px;
+    background-position: 140px 40px, 80px 0;
+  }
+
+  .main-banner p {
+    font-size: 18px;
+    line-height: 156%;
+    width: 356px;
+    padding-left: 112px;
+    margin-top: 0;
+  }
+
+  .main-banner p::before {
+    top: 15px;
+    left: 70px;
+    width: 33px;
+  }
+
+  .main-banner__response {
+    font-size: 16px;
+    width: 379px;
+    padding: 0;
+    margin-left: 115px;
+    margin-top: 55px;
+  }
+
+  .main-banner__scroll {
+    display: none;
+  }
+
+  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+    .main-banner::after {
+      background-image: url("../img/board-tablet@2x.png"), url("../img/triangle-group@2x.png");
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .main-banner {
+    min-height: 370px;
+    width: 287px;
+  }
+
+  .main-banner h2 {
+    position: relative;
+    font-size: 40px;
+    line-height: 47px;
+    width: 287px;
+    margin-top: 222px;
+    margin-left: 0;
+    z-index: 2;
+  }
+
+  .main-banner::after {
+    width: 320px;
+    height: 400px;
+    top: -220px;
+    left: 10px;
+    background-image: url("../img/board-mobile.png"), url("../img/triangle-group.png");
+    background-size: 294px 220px, 480px 385px;
+    background-position: 0 30px, 135px -5px;
+    z-index: 1;
+  }
+
+  .main-banner p {
+    padding-left: 50px;
+    font-size: 16px;
+    width: 245px;
+  }
+
+  .main-banner p::before {
+    left: 0;
+  }
+
+  .main-banner__response {
+    width: 287px;
+    margin-left: 0;
+    margin-top: 42px;
+  }
+
+  .main-banner__response-mobile {
+    display: inline;
+  }
+
+  .main-banner__response-desktop {
+    display: none;
+  }
+
+  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+    .main-banner::after {
+      background-image: url("../img/board-mobile@2x.png"), url("../img/triangle-group@2x.png");
+    }
+  }
+}

@@ -1,21 +1,23 @@
 .form {
-  background-color: #00b2ff;
+  position: relative;
+  background-color: $bg-blue;
   width: 100%;
   color: #ffffff;
   min-height: 670px;
-  background-image: url("../img/airplane-desktop.png");
-  background-size: 511px 288px;
+  background-image: url("../img/airplane-desktop.png"), url("../img/triangle-group.png");
+  background-size: 511px 288px, 635px 510px;
   background-repeat: no-repeat;
-  background-position: calc(50% - 350px) 160px;
+  background-position: calc(50% - 350px) 160px, calc(50% - 450px) 80px;
 }
 
 .form h2 {
-  margin-top: 95px;
+  padding-top: 95px;
+  margin-top: 0;
   margin-bottom: 0;
   width: 545px;
   font-size: 36px;
   line-height: 51px;
-  font-weight: normal;
+  font-weight: 400;
   position: relative;
   left: calc(50% + 20px);
 }
@@ -26,14 +28,13 @@
   font-size: 16px;
   line-height: 22px;
   width: 570px;
-  font-family: "PT Mono", "Courier New", monospace;
+  font-family: $font-mono;
   margin-bottom: 52px;
   margin-top: 5px;
 }
 
 .form form {
   display: flex;
-  flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
   width: 570px;
@@ -43,16 +44,18 @@
 
 .form input,
 .form textarea {
+  font-family: $font-mono;
+  font-size: 16px;
   box-sizing: border-box;
   padding: 16px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: $bg-input;
   color: #ffffff;
   border: none;
 }
 
 .form input::placeholder,
 .form textarea::placeholder {
-  font-family: "PT Mono", "Courier New", monospace;
+  font-family: $font-mono;
   font-size: 16px;
   color: #ffffff;
   opacity: 1;
@@ -68,7 +71,7 @@
 }
 
 .form textarea {
-  font-family: "PT Mono", "Courier New", monospace;
+  font-family: $font-mono;
   font-size: 16px;
   width: 570px;
   min-height: 154px;
@@ -83,24 +86,28 @@
   border-radius: 5px;
   height: 45px;
   border: 1px solid #ffffff;
-  background-color: #00b2ff;
+  background-color: $bg-blue;
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   margin-right: 38px;
   cursor: pointer;
 }
 
 .form button:hover {
   opacity: 0.8;
+  transition: all 0.5s linear;
 }
 
 .form input[type="checkbox"] {
-  display: none;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
 }
 
 .form label {
-  font-family: "PT Mono", "Courier New", monospace;
+  font-family: $font-mono;
   font-size: 14px;
   line-height: 16px;
   display: flex;
@@ -112,9 +119,10 @@
 
 .form label:hover {
   opacity: 1;
+  transition: all 0.5s linear;
 }
 
-.form label::before {
+.form input[type="checkbox"] + label::before {
   content: "";
   display: block;
   min-width: 16px;
@@ -131,7 +139,7 @@
 
 @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
   .form {
-    background-image: url("../img/airplane-desktop@2x.png");
+    background-image: url("../img/airplane-desktop@2x.png"), url("../img/triangle-group@2x.png");
   }
 }
 
@@ -150,7 +158,7 @@
   }
 
   .form h2 {
-    margin-top: 78px;
+    padding-top: 82px;
     font-size: 32px;
   }
 
@@ -195,7 +203,7 @@
   }
 
   .form h2 {
-    margin-top: 25px;
+    padding-top: 25px;
     line-height: 140%;
     font-size: 28px;
   }

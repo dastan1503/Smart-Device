@@ -1,39 +1,58 @@
 .header {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background-color: #203c42;
-  background-image: url("../img/background.png");
+  position: relative;
+  background-color: $bg-header;
   color: #ffffff;
-  min-height: 845px;
   width: 100%;
-  padding-top: 32px;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  min-height: 878px;
+  display: block;
+  background-image: url("../img/background.png");
+  background-color: $bg-dark;
+  background-size: 100% 878px;
+  z-index: 2;
 }
 
 .header__nav {
+  position: relative;
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   width: 1420px;
-  margin: 0 auto;
+  margin: 32px auto 0 auto;
+  z-index: 10;
+}
+
+.header__logo img {
+  width: 52px;
+  height: 52px;
+}
+
+.header__logo::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 52px;
+  background-image: url("../img/logo-header-after.png");
+  background-size: 150px 52px;
 }
 
 .header__logo {
-  background: url("../img/logo-header.png") no-repeat;
-  background-size: 202px 52px;
   margin-left: 10px;
   height: 52px;
   width: 202px;
   display: flex;
   align-items: center;
-  flex-direction: row;
   flex-grow: 1;
 }
 
 @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
-  .header__logo {
-    background-image: url("../img/logo-header@2x.png");
+  .header__logo::after {
+    background-image: url("../img/logo-header-after@2x.png");
   }
 
   .header__mail::before {
@@ -43,36 +62,31 @@
   .header__tel::before {
     background-image: url("../img/phone-desktop@2x.png");
   }
-
-  .header__info::after {
-    background-image: url("../img/board-desktop@2x.png");
-  }
-}
-
-.header__logo::after {
-  content: "";
-  display: block;
-  width: 37px;
-  height: 11px;
-  border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
-  margin-left: 322px;
 }
 
 .header a {
-  display: flex;
-  align-items: center;
   color: #ffffff;
-  font-family: "PT Mono", "Courier New", monospace;
+  font-family: $font-mono;
 }
 
 .header a:hover {
   opacity: 0.8;
+  transition: all 500ms linear;
+}
+
+.header__toggle {
+  border: none;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  background-color: transparent;
+  width: 37px;
+  height: 11px;
+  margin-right: 300px;
 }
 
 .header__mail::before {
   content: "";
-  display: block;
+  display: inline-block;
   background-image: url("../img/mail-desktop.png");
   background-size: 19px 14px;
   background-repeat: no-repeat;
@@ -87,7 +101,7 @@
 
 .header__tel::before {
   content: "";
-  display: block;
+  display: inline-block;
   background-image: url("../img/phone-desktop.png");
   background-repeat: no-repeat;
   background-size: 18px 18px;
@@ -96,136 +110,50 @@
   margin-right: 16px;
 }
 
-.header__nav button {
+.header__open-modal {
   background: transparent;
   color: #ffffff;
   outline: none;
   border-radius: 5px;
   border: 1px solid #ffffff;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   width: 180px;
   height: 45px;
   margin-left: 50px;
-}
-
-.header__nav button:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}
-
-.header__info {
-  width: 1411px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.header__info::after {
-  content: "";
-  width: 705px;
-  height: 515px;
-  top: 172px;
-  right: -85px;
-  display: block;
-  position: absolute;
-  background-image: url("../img/board-desktop.png");
-  background-size: 705px 515px;
-  background-repeat: no-repeat;
-  overflow-x: hidden;
-}
-
-.header__info h2 {
-  font-size: 80px;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 267px;
-  letter-spacing: 0.07em;
-}
-
-.header__info p {
-  padding-left: 100px;
-  position: relative;
-  font-family: "PT Mono", "Courier New", monospace;
-  font-size: 22px;
-  line-height: 34px;
-  width: 683px;
-}
-
-.header__info p::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 15px;
-  left: 7px;
-  width: 66px;
-  height: 2px;
-  background-color: #ffffff;
-  outline: none;
-}
-
-.header__free-response {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #00b2ff;
-  border-radius: 5px;
-  border: none;
-  width: 407px;
-  height: 55px;
-  margin-top: 40px;
-  margin-left: 100px;
-}
-
-.header__free-response::after {
-  content: "получить бесплатную консультацию";
-  color: #ffffff;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.header__scroll {
-  background: none;
-  border: none;
-  color: #ffffff;
-  font-family: "PT Mono", "Courier New", monospace;
-  position: absolute;
-  transform: rotate(-90deg);
-  font-size: 14px;
-  opacity: 0.8;
-  top: 648px;
-  left: -30px;
   cursor: pointer;
 }
 
-.header__scroll:hover {
-  opacity: 1;
+.header__open-modal:hover {
+  transition: all 500ms linear;
+  opacity: 0.8;
 }
 
 @media (max-width: 1199px) {
-  .header {
-    min-height: 666px;
-    padding-top: 20px;
+  .header__nav {
+    margin-top: 20px;
+    width: 719px;
   }
 
-  .header__nav {
-    width: 719px;
+  .header::before {
+    min-height: 685px;
+    background-size: 100% 685px;
   }
 
   .header__logo {
     margin-left: 0;
   }
 
-  .header__logo::after {
-    margin-left: 562px;
-  }
-
   .header a span {
     display: none;
   }
 
-  .header__nav button {
+  .header__toggle {
+    margin-right: 40px;
+  }
+
+  .header__open-modal {
     display: none;
   }
 
@@ -257,56 +185,6 @@
     margin-right: 0;
   }
 
-  .header__info {
-    width: 719px;
-  }
-
-  .header__info h2 {
-    font-size: 60px;
-    line-height: 70px;
-    width: 470px;
-    margin-top: 117px;
-    margin-left: 60px;
-    margin-bottom: 28px;
-  }
-
-  .header__info::after {
-    width: 260px;
-    height: 340px;
-    top: 42px;
-    right: -20px;
-    display: block;
-    position: absolute;
-    background-image: url("../img/board-tablet.png");
-    background-size: 260px 340px;
-  }
-
-  .header__info p {
-    font-size: 18px;
-    line-height: 156%;
-    width: 356px;
-    padding-left: 112px;
-    margin-top: 0;
-  }
-
-  .header__info p::before {
-    top: 15px;
-    left: 70px;
-    width: 33px;
-  }
-
-  .header__free-response {
-    font-size: 16px;
-    width: 379px;
-    padding: 0;
-    margin-left: 115px;
-    margin-top: 55px;
-  }
-
-  .header__info span {
-    display: none;
-  }
-
   @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
     .header__mail::before {
       background-image: url("../img/mail-tablet@2x.png");
@@ -315,91 +193,40 @@
     .header__tel::before {
       background-image: url("../img/phone-tablet@2x.png");
     }
-
-    .header__info::after {
-      background-image: url("../img/board-tablet@2x.png");
-    }
   }
 }
 
 @media (max-width: 767px) {
-  .header {
-    min-height: 632px;
-    padding-top: 15px;
-  }
-
   .header__nav {
+    margin-top: 10px;
     width: 287px;
   }
 
-  .header__logo {
-    background: url("../img/logo-header-mobile.png") no-repeat;
-    background-size: 38px 38px;
+  .header::before {
+    min-height: 650px;
+    background-size: 100% 650px;
+  }
+
+  .header__logo img {
+    width: 38px;
     height: 38px;
   }
 
   .header__logo::after {
-    margin-left: 152px;
+    display: none;
+  }
+
+  .header__toggle {
+    margin-right: 30px;
   }
 
   .header__mail {
     margin-right: 23px;
   }
 
-  .header__info {
-    width: 287px;
-  }
-
-  .header__info h2 {
-    position: relative;
-    font-size: 40px;
-    line-height: 47px;
-    width: 287px;
-    margin-top: 232px;
-    margin-left: 0;
-    z-index: 2;
-  }
-
-  .header__info::after {
-    width: auto;
-    top: 38px;
-    left: 10px;
-    background-image: url("../img/board-mobile.png");
-    background-size: 294px 220px;
-    z-index: 1;
-  }
-
-  .header__info p {
-    padding-left: 50px;
-    font-size: 16px;
-    width: 245px;
-  }
-
-  .header__info p::before {
-    left: 0;
-  }
-
-  .header__free-response {
-    width: 287px;
-    margin-left: 0;
-    margin-top: 42px;
-  }
-
-  .header__free-response::after {
-    content: "бесплатная консультация";
-  }
-
-  .header__info span {
-    display: none;
-  }
-
   @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
     .header__logo {
       background-image: url("../img/logo-header-mobile@2x.png");
-    }
-
-    .header__info::after {
-      background-image: url("../img/board-mobile@2x.png");
     }
   }
 }
