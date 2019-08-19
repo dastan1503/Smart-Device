@@ -71,6 +71,7 @@
 
 .header a:hover {
   opacity: 0.8;
+  transition: all 500ms linear;
 }
 
 .header__toggle {
@@ -121,10 +122,11 @@
   width: 180px;
   height: 45px;
   margin-left: 50px;
+  cursor: pointer;
 }
 
 .header__open-modal:hover {
-  cursor: pointer;
+  transition: all 500ms linear;
   opacity: 0.8;
 }
 

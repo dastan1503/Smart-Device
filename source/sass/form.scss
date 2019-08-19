@@ -44,6 +44,8 @@
 
 .form input,
 .form textarea {
+  font-family: $font-mono;
+  font-size: 16px;
   box-sizing: border-box;
   padding: 16px;
   background-color: $bg-input;
@@ -94,13 +96,14 @@
 
 .form button:hover {
   opacity: 0.8;
+  transition: all 0.5s linear;
 }
 
 .form input[type="checkbox"] {
+  width: 0;
+  height: 0;
   opacity: 0;
   position: absolute;
-  bottom: 0;
-  right: 0;
 }
 
 .form label {
@@ -116,6 +119,7 @@
 
 .form label:hover {
   opacity: 1;
+  transition: all 0.5s linear;
 }
 
 .form input[type="checkbox"] + label::before {

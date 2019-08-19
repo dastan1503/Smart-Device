@@ -55,7 +55,7 @@
   outline: none;
 }
 
-.main-banner-response {
+.main-banner__response {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,7 +68,12 @@
   margin-left: 100px;
 }
 
-.main-banner-response span {
+.main-banner__response:hover {
+  opacity: 0.8;
+  transition: all 500ms linear;
+}
+
+.main-banner__response span {
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -94,6 +99,7 @@
 
 .main-banner__scroll:hover {
   opacity: 1;
+  transition: all 500ms linear;
 }
 
 @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
@@ -143,7 +149,7 @@
     width: 33px;
   }
 
-  .main-banner-response {
+  .main-banner__response {
     font-size: 16px;
     width: 379px;
     padding: 0;
@@ -199,7 +205,7 @@
     left: 0;
   }
 
-  .main-banner-response {
+  .main-banner__response {
     width: 287px;
     margin-left: 0;
     margin-top: 42px;

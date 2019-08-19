@@ -22,6 +22,7 @@
   border-left: 3px solid $bg-blue;
   margin-bottom: 30px;
   padding-bottom: 65px;
+  cursor: pointer;
 }
 
 .advantages h3 {
@@ -47,7 +48,7 @@
 }
 
 .advantages li:hover {
-  cursor: pointer;
+  transition: all 0.5s linear;
   background: $bg-blue;
   color: #ffffff;
   border: 1px solid $bg-blue;
@@ -56,10 +57,12 @@
 
 .advantages li:hover svg path {
   fill: #ffffff;
+  transition: all 0.5s linear;
 }
 
 .advantages li:hover h3 {
   color: #ffffff;
+  transition: all 0.5s linear;
 }
 
 @media (max-width: 1199px) {

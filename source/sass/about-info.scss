@@ -39,7 +39,9 @@
 }
 
 .about-info button:hover {
-  opacity: 0.8;
+  transition: all 0.5s linear;
+  background-color: $bg-blue;
+  color: #ffffff;
 }
 
 @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
