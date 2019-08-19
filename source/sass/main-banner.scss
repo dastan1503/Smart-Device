@@ -1,4 +1,4 @@
-.header__info {
+.main-banner {
   width: 1411px;
   margin: 0 auto;
   position: relative;
@@ -6,7 +6,7 @@
   z-index: 10;
 }
 
-.header__info::after {
+.main-banner::after {
   content: "";
   width: 705px;
   height: 515px;
@@ -20,15 +20,16 @@
   overflow-x: hidden;
 }
 
-.header__info h2 {
+.main-banner h2 {
   font-size: 80px;
   text-transform: uppercase;
   font-weight: 700;
   margin-top: 267px;
   letter-spacing: 0.07em;
+  line-height: 94px;
 }
 
-.header__info p {
+.main-banner p {
   padding-left: 100px;
   position: relative;
   font-family: $font-mono;
@@ -37,7 +38,7 @@
   width: 683px;
 }
 
-.header__info p::before {
+.main-banner p::before {
   content: "";
   display: block;
   position: absolute;
@@ -49,7 +50,7 @@
   outline: none;
 }
 
-.header__free-response {
+.main-banner-response {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,15 +63,16 @@
   margin-left: 100px;
 }
 
-.header__free-response::after {
-  content: "получить бесплатную консультацию";
-  color: #ffffff;
-  font-size: 16px;
+.main-banner-response span {
   text-transform: uppercase;
-  font-weight: 700;
+  color: #ffffff;
 }
 
-.header__scroll {
+.main-banner__response-mobile {
+  display: none;
+}
+
+.main-banner__scroll {
   background: none;
   border: none;
   color: #ffffff;
@@ -84,22 +86,22 @@
   cursor: pointer;
 }
 
-.header__scroll:hover {
+.main-banner__scroll:hover {
   opacity: 1;
 }
 
 @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
-  .header__info::after {
+  .main-banner::after {
     background-image: url("../img/board-desktop@2x.png");
   }
 }
 
 @media (max-width: 1199px) {
-  .header__info {
+  .main-banner {
     width: 719px;
   }
 
-  .header__info h2 {
+  .main-banner h2 {
     font-size: 60px;
     line-height: 70px;
     width: 470px;
@@ -108,7 +110,7 @@
     margin-bottom: 28px;
   }
 
-  .header__info::after {
+  .main-banner::after {
     width: 260px;
     height: 340px;
     top: 42px;
@@ -119,7 +121,7 @@
     background-size: 260px 340px;
   }
 
-  .header__info p {
+  .main-banner p {
     font-size: 18px;
     line-height: 156%;
     width: 356px;
@@ -127,13 +129,13 @@
     margin-top: 0;
   }
 
-  .header__info p::before {
+  .main-banner p::before {
     top: 15px;
     left: 70px;
     width: 33px;
   }
 
-  .header__free-response {
+  .main-banner-response {
     font-size: 16px;
     width: 379px;
     padding: 0;
@@ -141,23 +143,23 @@
     margin-top: 55px;
   }
 
-  .header__info span {
+  .main-banner span {
     display: none;
   }
 
   @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
-    .header__info::after {
+    .main-banner::after {
       background-image: url("../img/board-tablet@2x.png");
     }
   }
 }
 
 @media (max-width: 767px) {
-  .header__info {
+  .main-banner {
     width: 287px;
   }
 
-  .header__info h2 {
+  .main-banner h2 {
     position: relative;
     font-size: 40px;
     line-height: 47px;
@@ -167,7 +169,7 @@
     z-index: 2;
   }
 
-  .header__info::after {
+  .main-banner::after {
     width: auto;
     top: 38px;
     left: 10px;
@@ -176,32 +178,36 @@
     z-index: 1;
   }
 
-  .header__info p {
+  .main-banner p {
     padding-left: 50px;
     font-size: 16px;
     width: 245px;
   }
 
-  .header__info p::before {
+  .main-banner p::before {
     left: 0;
   }
 
-  .header__free-response {
+  .main-banner-response {
     width: 287px;
     margin-left: 0;
     margin-top: 42px;
   }
 
-  .header__free-response::after {
-    content: "бесплатная консультация";
+  .main-banner__response-mobile {
+    display: block;
   }
 
-  .header__info span {
+  .main-banner__response-desktop {
+    display: none;
+  }
+
+  .main-banner span {
     display: none;
   }
 
   @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
-    .header__info::after {
+    .main-banner::after {
       background-image: url("../img/board-mobile@2x.png");
     }
   }

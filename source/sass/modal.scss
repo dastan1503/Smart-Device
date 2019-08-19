@@ -7,6 +7,7 @@
   left: calc(50% - 240px);
   background-color: $bg-blue;
   padding: 38px 40px 36px 40px;
+  z-index: 100;
 }
 
 .modal h2 {
@@ -84,7 +85,10 @@
 }
 
 .modal__form input[type="checkbox"] {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .modal__form label {

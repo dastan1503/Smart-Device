@@ -1,4 +1,5 @@
 .form {
+  position: relative;
   background-color: $bg-blue;
   width: 100%;
   color: #ffffff;
@@ -34,7 +35,6 @@
 
 .form form {
   display: flex;
-  flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
   width: 570px;
@@ -97,7 +97,10 @@
 }
 
 .form input[type="checkbox"] {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .form label {
@@ -115,7 +118,7 @@
   opacity: 1;
 }
 
-.form label::before {
+.form input[type="checkbox"] + label::before {
   content: "";
   display: block;
   min-width: 16px;

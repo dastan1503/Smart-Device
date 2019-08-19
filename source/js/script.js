@@ -7,11 +7,6 @@
   var modal = document.querySelector('.modal');
 
   // открытие/закрытие модалки
-  var showModal = function () {
-    modal.classList.remove('visually-hidden');
-    closePopup(closeButton, modal);
-  };
-
   openButton.addEventListener('keydown', function (evt) {
     if (evt.keyCode === KEYCODE_ENTER) {
       showModal();
@@ -20,6 +15,11 @@
   openButton.addEventListener('click', function () {
     showModal();
   });
+
+  var showModal = function () {
+    modal.classList.remove('visually-hidden');
+    closePopup(closeButton, modal);
+  };
 
   // функция закрытия окна
   var closePopup = function (button, popup) {
@@ -57,7 +57,7 @@
 
   // обработка скроллинга
   var scrollHeight = Number(document.querySelector('.header').clientHeight);
-  var scrollButton = document.querySelector('.header__scroll');
+  var scrollButton = document.querySelector('.main-banner__scroll');
 
   scrollButton.addEventListener('keydown', function (evt) {
     if (evt.keyCode === KEYCODE_ENTER) {

@@ -2,20 +2,12 @@
   width: 1170px;
   margin: 0 auto;
   position: relative;
-  display: flex;
-  flex-direction: column;
   margin-top: 0;
+  padding-left: 200px;
   margin-bottom: 85px;
   background: url("../img/year.png") no-repeat;
   background-size: 220px 317px;
   background-position: -20px 80px;
-}
-
-.about-info div {
-  display: flex;
-  flex-direction: column;
-  width: 985px;
-  margin-left: 188px;
 }
 
 .about-info h2 {
