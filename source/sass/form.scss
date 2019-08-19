@@ -4,10 +4,10 @@
   width: 100%;
   color: #ffffff;
   min-height: 670px;
-  background-image: url("../img/airplane-desktop.png");
-  background-size: 511px 288px;
+  background-image: url("../img/airplane-desktop.png"), url("../img/triangle-group.png");
+  background-size: 511px 288px, 635px 510px;
   background-repeat: no-repeat;
-  background-position: calc(50% - 350px) 160px;
+  background-position: calc(50% - 350px) 160px, calc(50% - 450px) 80px;
 }
 
 .form h2 {
@@ -135,7 +135,7 @@
 
 @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
   .form {
-    background-image: url("../img/airplane-desktop@2x.png");
+    background-image: url("../img/airplane-desktop@2x.png"), url("../img/triangle-group@2x.png");
   }
 }
 
