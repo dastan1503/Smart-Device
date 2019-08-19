@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  background-color: #203c42;
+  background-color: $bg-header;
   color: #ffffff;
   width: 100%;
 }
@@ -12,7 +12,7 @@
   min-height: 878px;
   display: block;
   background-image: url("../img/background.png");
-  background-color: #1b2d37;
+  background-color: $bg-dark;
   background-size: 100% 878px;
   z-index: 2;
 }
@@ -65,7 +65,6 @@
 }
 
 .header a {
-  display: flex;
   color: #ffffff;
   font-family: $font-mono;
 }
@@ -86,7 +85,7 @@
 
 .header__mail::before {
   content: "";
-  display: block;
+  display: inline-block;
   background-image: url("../img/mail-desktop.png");
   background-size: 19px 14px;
   background-repeat: no-repeat;
@@ -101,7 +100,7 @@
 
 .header__tel::before {
   content: "";
-  display: block;
+  display: inline-block;
   background-image: url("../img/phone-desktop.png");
   background-repeat: no-repeat;
   background-size: 18px 18px;
@@ -130,13 +129,14 @@
 }
 
 @media (max-width: 1199px) {
-  .header {
-    min-height: 666px;
-  }
-
   .header__nav {
     margin-top: 20px;
     width: 719px;
+  }
+
+  .header::before {
+    min-height: 685px;
+    background-size: 100% 685px;
   }
 
   .header__logo {
@@ -195,13 +195,14 @@
 }
 
 @media (max-width: 767px) {
-  .header {
-    min-height: 632px;
-  }
-
   .header__nav {
     margin-top: 10px;
     width: 287px;
+  }
+
+  .header::before {
+    min-height: 650px;
+    background-size: 100% 650px;
   }
 
   .header__logo img {

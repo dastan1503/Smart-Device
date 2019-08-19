@@ -4,13 +4,14 @@
   position: relative;
   background-color: transparent;
   z-index: 10;
+  min-height: 560px;
 }
 
 .main-banner::after {
   content: "";
   width: 705px;
   height: 515px;
-  top: 172px;
+  top: -60px;
   right: -85px;
   display: block;
   position: absolute;
@@ -21,15 +22,19 @@
 }
 
 .main-banner h2 {
+  color: #ffffff;
   font-size: 80px;
   text-transform: uppercase;
   font-weight: 700;
-  margin-top: 267px;
+  margin-top: 232px;
   letter-spacing: 0.07em;
   line-height: 94px;
+  margin-bottom: 0;
 }
 
 .main-banner p {
+  color: #ffffff;
+  margin-top: 27px;
   padding-left: 100px;
   position: relative;
   font-family: $font-mono;
@@ -59,7 +64,7 @@
   border: none;
   width: 407px;
   height: 55px;
-  margin-top: 40px;
+  margin-top: 45px;
   margin-left: 100px;
 }
 
@@ -81,9 +86,10 @@
   transform: rotate(-90deg);
   font-size: 14px;
   opacity: 0.8;
-  top: 648px;
-  left: -30px;
+  top: 420px;
+  left: -35px;
   cursor: pointer;
+  z-index: 100;
 }
 
 .main-banner__scroll:hover {
@@ -99,6 +105,7 @@
 @media (max-width: 1199px) {
   .main-banner {
     width: 719px;
+    min-height: 550px;
   }
 
   .main-banner h2 {
@@ -113,8 +120,8 @@
   .main-banner::after {
     width: 260px;
     height: 340px;
-    top: 42px;
-    right: -20px;
+    top: -75px;
+    right: -25px;
     display: block;
     position: absolute;
     background-image: url("../img/board-tablet.png");
@@ -143,7 +150,7 @@
     margin-top: 55px;
   }
 
-  .main-banner span {
+  .main-banner__scroll {
     display: none;
   }
 
@@ -156,6 +163,7 @@
 
 @media (max-width: 767px) {
   .main-banner {
+    min-height: 370px;
     width: 287px;
   }
 
@@ -164,14 +172,14 @@
     font-size: 40px;
     line-height: 47px;
     width: 287px;
-    margin-top: 232px;
+    margin-top: 222px;
     margin-left: 0;
     z-index: 2;
   }
 
   .main-banner::after {
     width: auto;
-    top: 38px;
+    top: -190px;
     left: 10px;
     background-image: url("../img/board-mobile.png");
     background-size: 294px 220px;
@@ -195,14 +203,10 @@
   }
 
   .main-banner__response-mobile {
-    display: block;
+    display: inline;
   }
 
   .main-banner__response-desktop {
-    display: none;
-  }
-
-  .main-banner span {
     display: none;
   }
 

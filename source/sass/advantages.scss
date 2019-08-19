@@ -1,7 +1,8 @@
 .advantages {
   width: 1170px;
   margin: 0 auto;
-  margin-top: 112px;
+  margin-top: 0;
+  padding-top: 112px;
   padding-left: 20px;
 }
 
@@ -17,10 +18,10 @@
 .advantages li {
   position: relative;
   width: 566px;
-  border: 1px solid #ebebeb;
+  border: $advantage-border;
   border-left: 3px solid $bg-blue;
   margin-bottom: 30px;
-  padding-bottom: 49px;
+  padding-bottom: 65px;
 }
 
 .advantages h3 {
@@ -64,7 +65,7 @@
 @media (max-width: 1199px) {
   .advantages {
     width: 720px;
-    margin-top: 54px;
+    margin-top: 0;
     padding: 0;
   }
 
@@ -107,6 +108,7 @@
     font-size: 20px;
     line-height: 140%;
     font-weight: 400;
+    margin-bottom: 5px;
   }
 
   .advantages p {

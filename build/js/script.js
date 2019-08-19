@@ -56,7 +56,7 @@
   };
 
   // обработка скроллинга
-  var scrollHeight = Number(document.querySelector('.header').clientHeight);
+  var scrollHeight = Number(document.querySelector('.advantages').offsetTop);
   var scrollButton = document.querySelector('.main-banner__scroll');
 
   scrollButton.addEventListener('keydown', function (evt) {
@@ -72,7 +72,7 @@
   var scrolling = function () {
     if (pageYOffset < scrollHeight) {
       window.setTimeout(scrolling, 1);
-      window.scrollBy(0, 3);
+      window.scrollBy(0, 4);
     }
   };
 })();
