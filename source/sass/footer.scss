@@ -320,7 +320,6 @@
     background-image: url("../img/icon-minus.svg");
   }
 
-
   .footer__contacts {
     margin: 0 auto;
     padding: 28px 0 28px 0;
@@ -364,6 +363,11 @@
     transition-duration: 0.5s, 0.5s;
     transition-timing-function: linear, linear;
     transition-delay: 0, 0;
+  }
+
+  .footer__tumbler:not(:checked) ~ ul li {
+    position: relative;
+    z-index: -1;
   }
 
   .footer__copyright {
