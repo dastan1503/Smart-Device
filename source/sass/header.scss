@@ -223,10 +223,4 @@
   .header__mail {
     margin-right: 23px;
   }
-
-  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
-    .header__logo {
-      background-image: url("../img/logo-header-mobile@2x.png");
-    }
-  }
 }
