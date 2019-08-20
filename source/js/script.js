@@ -70,7 +70,7 @@
   });
 
   var scrolling = function () {
-    if (pageYOffset < scrollHeight) {
+    if (pageYOffset <= scrollHeight) {
       window.setTimeout(scrolling, 1);
       window.scrollBy(0, 4);
     }

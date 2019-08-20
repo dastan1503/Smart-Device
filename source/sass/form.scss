@@ -131,6 +131,11 @@
   margin-right: 16px;
 }
 
+input[type="checkbox"]:focus + label {
+  opacity: 1;
+  transition: all 500ms linear;
+}
+
 .form input[type="checkbox"]:checked + label::before {
   background-image: url("../img/checkbox-on.svg");
   background-position: center center;
