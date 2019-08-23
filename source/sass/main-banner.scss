@@ -1,24 +1,11 @@
 .main-banner {
-  width: 1411px;
+  max-width: 1410px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   background-color: transparent;
   z-index: 10;
   min-height: 560px;
-}
-
-.main-banner::after {
-  content: "";
-  width: 705px;
-  height: 515px;
-  top: -60px;
-  right: -85px;
-  display: block;
-  position: absolute;
-  background-image: url("../img/board-desktop.png"), url("../img/triangle-group.png");
-  background-size: 705px 515px, 635px 515px;
-  background-repeat: no-repeat, no-repeat;
-  overflow-x: hidden;
 }
 
 .main-banner h2 {
@@ -102,13 +89,8 @@
   transition: all 500ms linear;
 }
 
-@media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
-  .main-banner::after {
-    background-image: url("../img/board-desktop@2x.png"), url("../img/triangle-group@2x.png");
-  }
-}
 
-@media (max-width: 1199px) {
+@media (max-width: 1023px) {
   .main-banner {
     width: 719px;
     min-height: 550px;
@@ -121,18 +103,6 @@
     margin-top: 117px;
     margin-left: 60px;
     margin-bottom: 28px;
-  }
-
-  .main-banner::after {
-    width: 400px;
-    height: 400px;
-    top: -120px;
-    right: -25px;
-    display: block;
-    position: absolute;
-    background-image: url("../img/board-tablet.png"), url("../img/triangle-group.png");
-    background-size: 260px 340px, 500px 400px;
-    background-position: 140px 40px, 80px 0;
   }
 
   .main-banner p {
@@ -160,12 +130,6 @@
   .main-banner__scroll {
     display: none;
   }
-
-  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
-    .main-banner::after {
-      background-image: url("../img/board-tablet@2x.png"), url("../img/triangle-group@2x.png");
-    }
-  }
 }
 
 @media (max-width: 767px) {
@@ -182,17 +146,6 @@
     margin-top: 222px;
     margin-left: 0;
     z-index: 2;
-  }
-
-  .main-banner::after {
-    width: 320px;
-    height: 400px;
-    top: -220px;
-    left: 10px;
-    background-image: url("../img/board-mobile.png"), url("../img/triangle-group.png");
-    background-size: 294px 220px, 480px 385px;
-    background-position: 0 30px, 135px -5px;
-    z-index: 1;
   }
 
   .main-banner p {
@@ -217,11 +170,5 @@
 
   .main-banner__response-desktop {
     display: none;
-  }
-
-  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
-    .main-banner::after {
-      background-image: url("../img/board-mobile@2x.png"), url("../img/triangle-group@2x.png");
-    }
   }
 }

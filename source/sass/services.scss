@@ -5,10 +5,10 @@
 }
 
 .services h3 {
-  width: 1170px;
+  width: 100%;
+  max-width: 1170px;
   margin: 0 auto;
   padding-top: 90px;
-  padding-left: 12px;
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
@@ -16,24 +16,24 @@
 }
 
 .services ul {
-  width: 1170px;
+  width: calc(100% - 20px);
+  max-width: 1170px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 10px;
   list-style-type: none;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   padding-bottom: 100px;
-  padding-left: 12px;
 }
 
 .services li {
   margin-bottom: 30px;
   position: relative;
   min-height: 620px;
-  width: 370px;
+  width: calc((100% - 60px) / 3);
   background-repeat: no-repeat;
-  background-size: 370px 620px;
+  background-size: 100% 620px;
   cursor: pointer;
 }
 
@@ -105,7 +105,7 @@
   transition: all 500ms linear;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1023px) {
   .services h3 {
     padding-left: 0;
     padding-top: 47px;
