@@ -55,24 +55,4 @@
     closeClick();
   };
 
-  // обработка скроллинга
-  var scrollHeight = Number(document.querySelector('.advantages').offsetTop);
-  var scrollButton = document.querySelector('.main-banner__scroll');
-
-  scrollButton.addEventListener('keydown', function (evt) {
-    if (evt.keyCode === KEYCODE_ENTER) {
-      scrolling();
-    }
-  });
-
-  scrollButton.addEventListener('click', function () {
-    scrolling();
-  });
-
-  var scrolling = function () {
-    if (pageYOffset <= scrollHeight) {
-      window.setTimeout(scrolling, 1);
-      window.scrollBy(0, 4);
-    }
-  };
 })();
