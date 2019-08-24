@@ -55,4 +55,19 @@
     closeClick();
   };
 
+  var ScrollToElement = document.querySelector('.advantages');
+  var scrollButton = document.querySelector('.main-banner__scroll');
+
+  scrollButton.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === KEYCODE_ENTER) {
+      evt.preventDefault();
+      ScrollToElement.scrollIntoView({block: 'start', behavior: 'smooth'});
+    }
+  });
+
+  scrollButton.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    ScrollToElement.scrollIntoView({block: 'start', behavior: 'smooth'});
+  });
+
 })();
