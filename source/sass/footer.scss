@@ -272,8 +272,9 @@
   }
 
   .footer__social ul {
-    width: 290px;
+    width: calc(100% - 30px);
     justify-content: center;
+    padding: 0 15px;
     margin: 0;
   }
 
@@ -286,9 +287,14 @@
   }
 
   .footer__sitemap {
-    width: 290px;
+    width: calc(100%);
     margin: 0 auto;
     padding: 28px 0;
+  }
+
+  .footer__sitemap ul {
+    width: calc(100% - 30px);
+    padding: 0 15px;
   }
 
   .footer__sitemap li {
@@ -301,7 +307,7 @@
 
   .footer h3 {
     display: flex;
-    width: 290px;
+    width: calc(100% - 30px);
     margin: 0 auto;
   }
 
@@ -339,7 +345,8 @@
   }
 
   .footer__contacts ul {
-    width: 290px;
+    width: calc(100% - 30px);
+    padding: 0 15px;
     margin: 0 auto;
   }
 
