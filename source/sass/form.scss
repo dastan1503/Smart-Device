@@ -38,7 +38,7 @@
   align-items: center;
   flex-wrap: wrap;
   max-width: 545px;
-  width: 50%;
+  width: calc(50% - 30px);
   position: relative;
   left: 50%;
 }
