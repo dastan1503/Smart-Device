@@ -1,7 +1,8 @@
 .services {
   background-color: $bg-dark;
   color: #ffffff;
-  width: 100%;
+  width: calc(100% - 60px);
+  padding: 0 30px;
 }
 
 .services h3 {
@@ -16,14 +17,14 @@
 }
 
 .services ul {
-  width: calc(100% - 20px);
+  width: calc(100% - 60px);
   max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 10px;
+  padding: 0;
   list-style-type: none;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin: 0 auto;
   padding-bottom: 100px;
 }
 
@@ -31,7 +32,7 @@
   margin-bottom: 30px;
   position: relative;
   min-height: 620px;
-  width: calc((100% - 60px) / 3);
+  width: calc((100% - 61px) / 3);
   background-repeat: no-repeat;
   background-size: 100% 620px;
   cursor: pointer;
@@ -106,28 +107,30 @@
 }
 
 @media (max-width: 1023px) {
+  .services {
+    width: calc(100% - 50px);
+    padding: 0 25px;
+  }
+
   .services h3 {
+    width: 100%;
     padding-left: 0;
     padding-top: 47px;
     font-size: 32px;
     line-height: 140%;
-    width: 620px;
-    padding-right: 100px;
     margin-bottom: 50px;
   }
 
   .services ul {
-    width: 720px;
+    padding: 0;
     padding-bottom: 35px;
-    padding-left: 0;
-    margin-bottom: 0;
   }
 
   .services li {
     min-height: 256px;
-    width: 715px;
+    width: 100%;
     margin-bottom: 45px;
-    background-size: 715px 256px;
+    background-size: 100% 100%;
   }
 
   .services li:nth-of-type(3n-2) {
@@ -171,25 +174,28 @@
 }
 
 @media (max-width: 767px) {
+  .services {
+    width: calc(100% - 30px);
+    padding: 0 15px;
+  }
+
   .services h3 {
-    padding: 47px 0 0 17px;
-    width: 290px;
+    padding-top: 47px;
     font-size: 28px;
     line-height: 140%;
     margin-bottom: 45px;
   }
 
   .services ul {
-    width: 290px;
+    width: 100%;
     margin-bottom: 0;
     padding-left: 0;
   }
 
   .services li {
     min-height: 256px;
-    width: 290px;
     margin-bottom: 30px;
-    background-size: 290px 256px;
+    background-size: 100% 100%;
   }
 
   .services li:nth-of-type(3n-2) {

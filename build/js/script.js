@@ -55,31 +55,4 @@
     closeClick();
   };
 
-  // обработка скроллинга
-  var a = document.querySelector('.advantages');
-  var scrollHeight = Number(document.querySelector('.advantages').offsetTop);
-  var scrollButton = document.querySelector('.main-banner__scroll');
-
-  scrollButton.addEventListener('keydown', function (evt) {
-    evt.preventDefault();
-    if (evt.keyCode === KEYCODE_ENTER) {
-      scrolling();
-    }
-  });
-
-  scrollButton.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    scrolling();
-  });
-
-  var scrolling = function () {
-/*
-    if (pageYOffset <= scrollHeight) {
-      window.setTimeout(scrolling, 1);
-      window.scrollBy(0, 1);
-    }
-*/
-  a.scrollIntoView({block: "start", behavior: "smooth"});
-
-  };
 })();

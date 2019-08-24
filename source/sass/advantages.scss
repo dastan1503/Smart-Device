@@ -1,13 +1,15 @@
 .advantages {
-  width: 100%;
-  max-width: 1170px;
+  width: calc(100% - 60px);
+  max-width: 1410px;
   margin: 0 auto;
   margin-top: 0;
   margin-bottom: 95px;
+  padding: 0 30;
   padding-top: 112px;
 }
 
 .advantages ul {
+  width: 100%;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -18,7 +20,7 @@
 
 .advantages li {
   position: relative;
-  width: calc(50% - 15px - 42px);
+  width: calc(50% - 42px - 30px);
   border: $advantage-border;
   border-left: 3px solid $bg-blue;
   margin-bottom: 30px;
@@ -68,10 +70,10 @@
 
 @media (max-width: 1023px) {
   .advantages {
-    width: 720px;
+    width: calc(100% - 50px);
     margin-top: 0;
     margin-bottom: 30px;
-    padding: 0;
+    padding: 0 25px;
   }
 
   .advantages svg {
@@ -80,8 +82,9 @@
   }
 
   .advantages li {
-    width: calc(50% - 15px - 42px);
+    width: calc(50% - 30px - 10px);
     padding-bottom: 20px;
+    padding-right: 21px;
   }
 
   .advantages h3 {
@@ -92,7 +95,6 @@
   }
 
   .advantages p {
-    width: 297px;
     margin-left: 27px;
   }
 }
@@ -100,11 +102,12 @@
 @media (max-width: 767px) {
   .advantages {
     margin-top: 36px;
-    width: 290px;
+    width: calc(100% - 30px);
+    padding: 0 15px;
   }
 
   .advantages li {
-    width: 245px;
+    width: 100%;
     margin-bottom: 20px;
     border-left: 2px solid $bg-blue;
   }
@@ -117,7 +120,6 @@
   }
 
   .advantages p {
-    width: 245px;
     margin-top: 2px;
   }
 }
