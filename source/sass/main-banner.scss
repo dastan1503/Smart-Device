@@ -1,11 +1,13 @@
 .main-banner {
   max-width: 1410px;
-  width: 100%;
+  width: calc(100% - 60px);
+  paddind: 0 30px;
   margin: 0 auto;
   position: relative;
   background-color: transparent;
   z-index: 10;
   min-height: 560px;
+  margin-bottom: 55px;
 }
 
 .main-banner h2 {
@@ -92,14 +94,14 @@
 
 @media (max-width: 1023px) {
   .main-banner {
-    width: 719px;
+    width: 100%;
     min-height: 550px;
   }
 
   .main-banner h2 {
     font-size: 60px;
     line-height: 70px;
-    width: 470px;
+    width: 50%;
     margin-top: 117px;
     margin-left: 60px;
     margin-bottom: 28px;
@@ -108,7 +110,7 @@
   .main-banner p {
     font-size: 18px;
     line-height: 156%;
-    width: 356px;
+    width: 50%;
     padding-left: 112px;
     margin-top: 0;
   }
@@ -135,23 +137,26 @@
 @media (max-width: 767px) {
   .main-banner {
     min-height: 370px;
-    width: 287px;
+    width: calc(100% - 30px);
+    padding: 0 15px;
   }
 
   .main-banner h2 {
     position: relative;
     font-size: 40px;
     line-height: 47px;
-    width: 287px;
+    width: 100%;
     margin-top: 222px;
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 2;
   }
 
   .main-banner p {
+    margin: 0 auto;
     padding-left: 50px;
     font-size: 16px;
-    width: 245px;
+    width: calc(100% - 50px);
   }
 
   .main-banner p::before {
@@ -159,8 +164,9 @@
   }
 
   .main-banner__response {
-    width: 287px;
-    margin-left: 0;
+    width: 100%;
+    max-width: 285px;
+    margin: 0 auto;
     margin-top: 42px;
   }
 

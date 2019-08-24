@@ -1,14 +1,15 @@
 .about-info {
-  width: calc(100% - 190px);
+  width: calc(100% - 250px);
   max-width: 980px;
   margin: 0 auto;
   position: relative;
   margin-top: 0;
-  padding-left: 190px;
+  padding-left: 220px;
+  padding-right: 30px;
   margin-bottom: 85px;
   background: url("../img/year.png") no-repeat;
   background-size: 220px 317px;
-  background-position: -20px 5px;
+  background-position: 0 5px;
 }
 
 .about-info h2 {
@@ -52,12 +53,12 @@
 
 @media (max-width: 1023px) {
   .about-info {
-    width: 535px;
     margin-top: 0;
     background: url("../img/year-tablet.png") no-repeat;
     background-size: 244px 362px;
     background-position: -25px 0;
-    margin-bottom: 62px;
+    margin-bottom: 0;
+    padding-bottom: 62px;
     padding-left: 185px;
   }
 
@@ -72,10 +73,6 @@
 
   .about-info span {
     display: none;
-  }
-
-  .about-info p {
-    width: 535px;
   }
 
   .about-info p:last-of-type::after {
@@ -96,10 +93,10 @@
 
 @media (max-width: 767px) {
   .about-info {
-    width: 290px;
-    padding-left: 0;
+    width: calc(100% - 30px);
+    padding-left: 15px;
+    padding-right: 15px;
     background: none;
-    margin-bottom: 65px;
   }
 
   .about-info div {
@@ -114,7 +111,6 @@
   }
 
   .about-info p {
-    width: 290px;
     margin-top: 25px;
     margin-bottom: 30px;
   }

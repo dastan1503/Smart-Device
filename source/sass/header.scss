@@ -23,9 +23,9 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding: 0 10px 0 10px;
+  padding: 0 30px;
   max-width: 1430px;
-  width: calc(100% - 20px);
+  width: calc(100% - 60px);
   z-index: 10;
   margin: 0 auto;
   margin-top: 32px;
@@ -150,9 +150,9 @@
 
 @media (max-width: 1023px) {
   .header__nav {
-    justify-content: flex-end;
     margin-top: 20px;
-    width: 719px;
+    padding: 0 25px;
+    width: calc(100% - 50px);
   }
 
   .header a {
@@ -182,6 +182,13 @@
     display: none;
   }
 
+  .header__mail {
+    width: 27px;
+    height: 19px;
+    margin-right: 34px;
+  }
+
+
   .header__mail::before {
     background-image: url("../img/mail-tablet.png");
     background-size: 26px 19px;
@@ -189,20 +196,16 @@
     height: 19px;
   }
 
+  .header__tel {
+    width: 25px;
+    height: 25px;
+  }
+
   .header__tel::before {
     background-image: url("../img/phone-tablet.png");
     background-size: 25px 24px;
     width: 24px;
     height: 24px;
-  }
-
-  .header__mail {
-    width: 26px;
-    margin-right: 34px;
-  }
-
-  .header__tel {
-    width: 24px;
   }
 
   .header a::before {
@@ -224,7 +227,8 @@
 @media (max-width: 767px) {
   .header__nav {
     margin-top: 10px;
-    width: 287px;
+    width: calc(100% - 30px);
+    padding: 0 15px;
   }
 
   .header::before {
