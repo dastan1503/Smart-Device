@@ -28,6 +28,7 @@
 }
 
 .services li {
+  display: flex;
   margin-bottom: 30px;
   position: relative;
   min-height: 620px;
@@ -91,7 +92,6 @@
   padding-top: 53px;
   padding-left: 50px;
   padding-right: 150px;
-  height: 100%;
   width: 100%;
   color: #ffffff;
 }
@@ -100,7 +100,7 @@
   margin: 0;
 }
 
-.services li:hover {
+.services a:hover {
   outline: 1px solid $bg-blue;
   transition: all 500ms linear;
 }
